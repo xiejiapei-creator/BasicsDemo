@@ -1,0 +1,10 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+target 'FunctionCode' do
+
+pod 'Masonry'
+pod 'FLAnimatedImage'
+
+end

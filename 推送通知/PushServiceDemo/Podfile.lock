@@ -1,0 +1,28 @@
+PODS:
+  - JCore (2.4.0)
+  - JPush (3.3.2):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+
+DEPENDENCIES:
+  - JPush
+  - Masonry
+  - MBProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - JCore
+    - JPush
+    - Masonry
+    - MBProgressHUD
+
+SPEC CHECKSUMS:
+  JCore: a29e4b0ee54e1301446dc02d8e1c350404108b34
+  JPush: 9468c84a3809dc3ac2fc1c89c6d1d6c858a91bf5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+
+PODFILE CHECKSUM: 25198de77c31b9b1560ca6736fcaa23f50f1afc6
+
+COCOAPODS: 1.9.1

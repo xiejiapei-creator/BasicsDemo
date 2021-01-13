@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  CustomViewDemo
+//
+//  Created by 谢佳培 on 2020/11/12.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIColor+Custom.h"
+#import "NSObject+Custom.h"
+#import "UIView+Custom.h"
+#import "NSDate+Custom.h"
+#import "UIImage+Custom.h"
+#import <Masonry/Masonry.h>
+
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define SafeAreaInsetsTop UIApplication.sharedApplication.keyWindow.safeAreaInsets.top
+#define SafeAreaInsetsBottom UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom
+
+#endif /* PrefixHeader_pch */

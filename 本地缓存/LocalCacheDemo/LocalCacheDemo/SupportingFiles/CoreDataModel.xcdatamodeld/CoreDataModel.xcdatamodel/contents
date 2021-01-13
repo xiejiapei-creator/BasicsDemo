@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Robot" representedClassName="Robot" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="robotArm" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RobotArm"/>
+    </entity>
+    <entity name="RobotArm" representedClassName="RobotArm" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="numberOfFingers" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="RobotDusk" representedClassName="RobotDusk" parentEntity="Robot" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="Robot" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="RobotArm" positionX="-54" positionY="9" width="128" height="73"/>
+        <element name="RobotDusk" positionX="-36" positionY="27" width="128" height="43"/>
+    </elements>
+</model>

@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DC35E0D0F1790E8FFE4E0EA /* libPods-UIKitGrammarDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962E5E6161F4B19FB012E7F0 /* libPods-UIKitGrammarDemo.a */; };
+		E95A82DA25403AD400B34438 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E95A82D925403AD400B34438 /* AppDelegate.m */; };
+		E95A82E525403AD500B34438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95A82E425403AD500B34438 /* Assets.xcassets */; };
+		E95A82E825403AD500B34438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95A82E625403AD500B34438 /* LaunchScreen.storyboard */; };
+		E95A82EB25403AD500B34438 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E95A82EA25403AD500B34438 /* main.m */; };
+		E95A82F725403B5800B34438 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95A82F525403B5800B34438 /* ViewController.m */; };
+		E95A82FD25403C1900B34438 /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = E95A82FC25403C1900B34438 /* person.json */; };
+		E9B2ECD7254A6DF300A5D2BD /* luckcoffee.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E9B2ECD6254A6DF300A5D2BD /* luckcoffee.JPG */; };
+		E9B2ECDB254A6FD400A5D2BD /* HowToUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ECDA254A6FD400A5D2BD /* HowToUseViewController.m */; };
+		E9B2ED35254BE74800A5D2BD /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED34254BE74800A5D2BD /* CollectionViewController.m */; };
+		E9B2ED3B254BE85500A5D2BD /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED3A254BE85500A5D2BD /* TableViewController.m */; };
+		E9B2ED41254BE94600A5D2BD /* InputViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED40254BE94600A5D2BD /* InputViewViewController.m */; };
+		E9B2ED47254BE9AD00A5D2BD /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED46254BE9AD00A5D2BD /* ControlViewController.m */; };
+		E9B2ED4D254BEA1800A5D2BD /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED4C254BEA1800A5D2BD /* ScrollViewController.m */; };
+		E9B2ED53254BEA6700A5D2BD /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED52254BEA6700A5D2BD /* PickerViewController.m */; };
+		E9B2ED59254BEAC900A5D2BD /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED58254BEAC900A5D2BD /* AlertViewController.m */; };
+		E9B2ED60254BEB4500A5D2BD /* GestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED5F254BEB4500A5D2BD /* GestureRecognizerViewController.m */; };
+		E9B2ED64254BEBBA00A5D2BD /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B2ED63254BEBBA00A5D2BD /* MotionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55C015A7D436C2BA05A107C6 /* Pods-UIKitGrammarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitGrammarDemo.release.xcconfig"; path = "Target Support Files/Pods-UIKitGrammarDemo/Pods-UIKitGrammarDemo.release.xcconfig"; sourceTree = "<group>"; };
+		90AC4F732A245983829EC799 /* Pods-UIKitGrammarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitGrammarDemo.debug.xcconfig"; path = "Target Support Files/Pods-UIKitGrammarDemo/Pods-UIKitGrammarDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		962E5E6161F4B19FB012E7F0 /* libPods-UIKitGrammarDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitGrammarDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95A82D525403AD400B34438 /* UIKitGrammarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitGrammarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95A82D825403AD400B34438 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E95A82D925403AD400B34438 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E95A82E425403AD500B34438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E95A82E725403AD500B34438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E95A82E925403AD500B34438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E95A82EA25403AD500B34438 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E95A82F525403B5800B34438 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E95A82F625403B5800B34438 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E95A82FC25403C1900B34438 /* person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = person.json; sourceTree = "<group>"; };
+		E9B2ECD6254A6DF300A5D2BD /* luckcoffee.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = luckcoffee.JPG; sourceTree = "<group>"; };
+		E9B2ECD9254A6FD400A5D2BD /* HowToUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HowToUseViewController.h; sourceTree = "<group>"; };
+		E9B2ECDA254A6FD400A5D2BD /* HowToUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HowToUseViewController.m; sourceTree = "<group>"; };
+		E9B2ED33254BE74800A5D2BD /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		E9B2ED34254BE74800A5D2BD /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		E9B2ED39254BE85500A5D2BD /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		E9B2ED3A254BE85500A5D2BD /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		E9B2ED3F254BE94600A5D2BD /* InputViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewViewController.h; sourceTree = "<group>"; };
+		E9B2ED40254BE94600A5D2BD /* InputViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewViewController.m; sourceTree = "<group>"; };
+		E9B2ED45254BE9AD00A5D2BD /* ControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControlViewController.h; sourceTree = "<group>"; };
+		E9B2ED46254BE9AD00A5D2BD /* ControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControlViewController.m; sourceTree = "<group>"; };
+		E9B2ED4B254BEA1800A5D2BD /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		E9B2ED4C254BEA1800A5D2BD /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		E9B2ED51254BEA6700A5D2BD /* PickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		E9B2ED52254BEA6700A5D2BD /* PickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		E9B2ED57254BEAC900A5D2BD /* AlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		E9B2ED58254BEAC900A5D2BD /* AlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		E9B2ED5E254BEB4500A5D2BD /* GestureRecognizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureRecognizerViewController.h; sourceTree = "<group>"; };
+		E9B2ED5F254BEB4500A5D2BD /* GestureRecognizerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureRecognizerViewController.m; sourceTree = "<group>"; };
+		E9B2ED62254BEBBA00A5D2BD /* MotionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		E9B2ED63254BEBBA00A5D2BD /* MotionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E95A82D225403AD400B34438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC35E0D0F1790E8FFE4E0EA /* libPods-UIKitGrammarDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F9243AD0C0B76CF2F0A8023 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				962E5E6161F4B19FB012E7F0 /* libPods-UIKitGrammarDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D6B19DE89AD4F27EC8E5B25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90AC4F732A245983829EC799 /* Pods-UIKitGrammarDemo.debug.xcconfig */,
+				55C015A7D436C2BA05A107C6 /* Pods-UIKitGrammarDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E95A82CC25403AD400B34438 = {
+			isa = PBXGroup;
+			children = (
+				E95A82D725403AD400B34438 /* UIKitGrammarDemo */,
+				E95A82D625403AD400B34438 /* Products */,
+				7D6B19DE89AD4F27EC8E5B25 /* Pods */,
+				5F9243AD0C0B76CF2F0A8023 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E95A82D625403AD400B34438 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E95A82D525403AD400B34438 /* UIKitGrammarDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E95A82D725403AD400B34438 /* UIKitGrammarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED66254BEBBE00A5D2BD /* Motion */,
+				E9B2ED5D254BEB1900A5D2BD /* GestureRecognizer */,
+				E9B2ED5C254BEB0200A5D2BD /* ViewController */,
+				E9B2ED56254BEABD00A5D2BD /* AlertView */,
+				E9B2ED50254BEA5900A5D2BD /* PickerView */,
+				E9B2ED4A254BEA0800A5D2BD /* ScrollView */,
+				E9B2ED44254BE99F00A5D2BD /* ControlView */,
+				E9B2ED3E254BE93700A5D2BD /* InputView */,
+				E9B2ED38254BE84600A5D2BD /* TableView */,
+				E9B2ED32254BE72700A5D2BD /* CollectionView */,
+				E95A82F325403ADF00B34438 /* SupportingFiles */,
+				E95A82E925403AD500B34438 /* Info.plist */,
+			);
+			path = UIKitGrammarDemo;
+			sourceTree = "<group>";
+		};
+		E95A82F325403ADF00B34438 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ECD6254A6DF300A5D2BD /* luckcoffee.JPG */,
+				E95A82FC25403C1900B34438 /* person.json */,
+				E95A82EA25403AD500B34438 /* main.m */,
+				E95A82D825403AD400B34438 /* AppDelegate.h */,
+				E95A82D925403AD400B34438 /* AppDelegate.m */,
+				E95A82E425403AD500B34438 /* Assets.xcassets */,
+				E95A82E625403AD500B34438 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E9B2ED32254BE72700A5D2BD /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED33254BE74800A5D2BD /* CollectionViewController.h */,
+				E9B2ED34254BE74800A5D2BD /* CollectionViewController.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		E9B2ED38254BE84600A5D2BD /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED39254BE85500A5D2BD /* TableViewController.h */,
+				E9B2ED3A254BE85500A5D2BD /* TableViewController.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		E9B2ED3E254BE93700A5D2BD /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED3F254BE94600A5D2BD /* InputViewViewController.h */,
+				E9B2ED40254BE94600A5D2BD /* InputViewViewController.m */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		E9B2ED44254BE99F00A5D2BD /* ControlView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED45254BE9AD00A5D2BD /* ControlViewController.h */,
+				E9B2ED46254BE9AD00A5D2BD /* ControlViewController.m */,
+			);
+			path = ControlView;
+			sourceTree = "<group>";
+		};
+		E9B2ED4A254BEA0800A5D2BD /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED4B254BEA1800A5D2BD /* ScrollViewController.h */,
+				E9B2ED4C254BEA1800A5D2BD /* ScrollViewController.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		E9B2ED50254BEA5900A5D2BD /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED51254BEA6700A5D2BD /* PickerViewController.h */,
+				E9B2ED52254BEA6700A5D2BD /* PickerViewController.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		E9B2ED56254BEABD00A5D2BD /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED57254BEAC900A5D2BD /* AlertViewController.h */,
+				E9B2ED58254BEAC900A5D2BD /* AlertViewController.m */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		E9B2ED5C254BEB0200A5D2BD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E95A82F625403B5800B34438 /* ViewController.h */,
+				E95A82F525403B5800B34438 /* ViewController.m */,
+				E9B2ECD9254A6FD400A5D2BD /* HowToUseViewController.h */,
+				E9B2ECDA254A6FD400A5D2BD /* HowToUseViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9B2ED5D254BEB1900A5D2BD /* GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED5E254BEB4500A5D2BD /* GestureRecognizerViewController.h */,
+				E9B2ED5F254BEB4500A5D2BD /* GestureRecognizerViewController.m */,
+			);
+			path = GestureRecognizer;
+			sourceTree = "<group>";
+		};
+		E9B2ED66254BEBBE00A5D2BD /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				E9B2ED62254BEBBA00A5D2BD /* MotionViewController.h */,
+				E9B2ED63254BEBBA00A5D2BD /* MotionViewController.m */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E95A82D425403AD400B34438 /* UIKitGrammarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95A82EE25403AD500B34438 /* Build configuration list for PBXNativeTarget "UIKitGrammarDemo" */;
+			buildPhases = (
+				BB1D335EFBF96965DF58EC2B /* [CP] Check Pods Manifest.lock */,
+				E95A82D125403AD400B34438 /* Sources */,
+				E95A82D225403AD400B34438 /* Frameworks */,
+				E95A82D325403AD400B34438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIKitGrammarDemo;
+			productName = UIKitGrammarDemo;
+			productReference = E95A82D525403AD400B34438 /* UIKitGrammarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E95A82CD25403AD400B34438 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					E95A82D425403AD400B34438 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = E95A82D025403AD400B34438 /* Build configuration list for PBXProject "UIKitGrammarDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E95A82CC25403AD400B34438;
+			productRefGroup = E95A82D625403AD400B34438 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E95A82D425403AD400B34438 /* UIKitGrammarDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E95A82D325403AD400B34438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B2ECD7254A6DF300A5D2BD /* luckcoffee.JPG in Resources */,
+				E95A82FD25403C1900B34438 /* person.json in Resources */,
+				E95A82E825403AD500B34438 /* LaunchScreen.storyboard in Resources */,
+				E95A82E525403AD500B34438 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB1D335EFBF96965DF58EC2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKitGrammarDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E95A82D125403AD400B34438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B2ECDB254A6FD400A5D2BD /* HowToUseViewController.m in Sources */,
+				E9B2ED41254BE94600A5D2BD /* InputViewViewController.m in Sources */,
+				E9B2ED53254BEA6700A5D2BD /* PickerViewController.m in Sources */,
+				E9B2ED47254BE9AD00A5D2BD /* ControlViewController.m in Sources */,
+				E9B2ED4D254BEA1800A5D2BD /* ScrollViewController.m in Sources */,
+				E9B2ED3B254BE85500A5D2BD /* TableViewController.m in Sources */,
+				E9B2ED60254BEB4500A5D2BD /* GestureRecognizerViewController.m in Sources */,
+				E9B2ED59254BEAC900A5D2BD /* AlertViewController.m in Sources */,
+				E95A82F725403B5800B34438 /* ViewController.m in Sources */,
+				E9B2ED64254BEBBA00A5D2BD /* MotionViewController.m in Sources */,
+				E95A82DA25403AD400B34438 /* AppDelegate.m in Sources */,
+				E9B2ED35254BE74800A5D2BD /* CollectionViewController.m in Sources */,
+				E95A82EB25403AD500B34438 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E95A82E625403AD500B34438 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E95A82E725403AD500B34438 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E95A82EC25403AD500B34438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E95A82ED25403AD500B34438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E95A82EF25403AD500B34438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90AC4F732A245983829EC799 /* Pods-UIKitGrammarDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRMHT335N6;
+				INFOPLIST_FILE = UIKitGrammarDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiejiapei.UIKitGrammarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E95A82F025403AD500B34438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C015A7D436C2BA05A107C6 /* Pods-UIKitGrammarDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRMHT335N6;
+				INFOPLIST_FILE = UIKitGrammarDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiejiapei.UIKitGrammarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E95A82D025403AD400B34438 /* Build configuration list for PBXProject "UIKitGrammarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95A82EC25403AD500B34438 /* Debug */,
+				E95A82ED25403AD500B34438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E95A82EE25403AD500B34438 /* Build configuration list for PBXNativeTarget "UIKitGrammarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95A82EF25403AD500B34438 /* Debug */,
+				E95A82F025403AD500B34438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E95A82CD25403AD400B34438 /* Project object */;
+}

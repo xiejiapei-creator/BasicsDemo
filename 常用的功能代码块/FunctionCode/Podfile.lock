@@ -1,0 +1,20 @@
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - FLAnimatedImage
+  - Masonry
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - FLAnimatedImage
+    - Masonry
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 819b0755e8913d550d7bd70052f66600a6d3da54
+
+COCOAPODS: 1.9.1

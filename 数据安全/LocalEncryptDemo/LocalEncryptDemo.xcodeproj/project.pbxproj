@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9110DE42507510300670540 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9110DE32507510300670540 /* AppDelegate.m */; };
+		E9110DEF2507510500670540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9110DEE2507510500670540 /* Assets.xcassets */; };
+		E9110DF22507510500670540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9110DF02507510500670540 /* LaunchScreen.storyboard */; };
+		E9110DF52507510500670540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9110DF42507510500670540 /* main.m */; };
+		E9110DFE2507520300670540 /* LocalEncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9110DFD2507520300670540 /* LocalEncryptViewController.m */; };
+		E9110E062507616700670540 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E9110E022507616700670540 /* SAMKeychainQuery.m */; };
+		E9110E072507616700670540 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E9110E052507616700670540 /* SAMKeychain.m */; };
+		E9110E0E2507642000670540 /* LocalEncryptService.m in Sources */ = {isa = PBXBuildFile; fileRef = E9110E0D2507642000670540 /* LocalEncryptService.m */; };
+		E9110E1125076F4200670540 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E9110E1025076F4200670540 /* NSData+AES.m */; };
+		E9110E152507759900670540 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E9110E142507759900670540 /* GTMBase64.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9110DDF2507510300670540 /* LocalEncryptDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalEncryptDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9110DE22507510300670540 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9110DE32507510300670540 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9110DEE2507510500670540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9110DF12507510500670540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9110DF32507510500670540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9110DF42507510500670540 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9110DFC2507520300670540 /* LocalEncryptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalEncryptViewController.h; sourceTree = "<group>"; };
+		E9110DFD2507520300670540 /* LocalEncryptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalEncryptViewController.m; sourceTree = "<group>"; };
+		E9110E022507616700670540 /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
+		E9110E032507616700670540 /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
+		E9110E042507616700670540 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
+		E9110E052507616700670540 /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
+		E9110E0C2507642000670540 /* LocalEncryptService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalEncryptService.h; sourceTree = "<group>"; };
+		E9110E0D2507642000670540 /* LocalEncryptService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalEncryptService.m; sourceTree = "<group>"; };
+		E9110E0F25076F4200670540 /* NSData+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		E9110E1025076F4200670540 /* NSData+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		E9110E122507759800670540 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		E9110E132507759900670540 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		E9110E142507759900670540 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9110DDC2507510300670540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9110DD62507510300670540 = {
+			isa = PBXGroup;
+			children = (
+				E9110DE12507510300670540 /* LocalEncryptDemo */,
+				E9110DE02507510300670540 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9110DE02507510300670540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9110DDF2507510300670540 /* LocalEncryptDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9110DE12507510300670540 /* LocalEncryptDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E9110E002507613000670540 /* HelpFiles */,
+				E9110DFF2507611700670540 /* EncryptService */,
+				E9110DFC2507520300670540 /* LocalEncryptViewController.h */,
+				E9110DFD2507520300670540 /* LocalEncryptViewController.m */,
+				E9110DF32507510500670540 /* Info.plist */,
+				E9110DFB2507511300670540 /* SupportingFiles */,
+			);
+			path = LocalEncryptDemo;
+			sourceTree = "<group>";
+		};
+		E9110DFB2507511300670540 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E9110DE22507510300670540 /* AppDelegate.h */,
+				E9110DE32507510300670540 /* AppDelegate.m */,
+				E9110DEE2507510500670540 /* Assets.xcassets */,
+				E9110DF02507510500670540 /* LaunchScreen.storyboard */,
+				E9110DF42507510500670540 /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E9110DFF2507611700670540 /* EncryptService */ = {
+			isa = PBXGroup;
+			children = (
+				E9110E0C2507642000670540 /* LocalEncryptService.h */,
+				E9110E0D2507642000670540 /* LocalEncryptService.m */,
+				E9110E0F25076F4200670540 /* NSData+AES.h */,
+				E9110E1025076F4200670540 /* NSData+AES.m */,
+			);
+			path = EncryptService;
+			sourceTree = "<group>";
+		};
+		E9110E002507613000670540 /* HelpFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E9110E162507826A00670540 /* GTMBase64 */,
+				E9110E012507616700670540 /* SAMKeychain */,
+			);
+			path = HelpFiles;
+			sourceTree = "<group>";
+		};
+		E9110E012507616700670540 /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				E9110E022507616700670540 /* SAMKeychainQuery.m */,
+				E9110E032507616700670540 /* SAMKeychain.h */,
+				E9110E042507616700670540 /* SAMKeychainQuery.h */,
+				E9110E052507616700670540 /* SAMKeychain.m */,
+			);
+			path = SAMKeychain;
+			sourceTree = "<group>";
+		};
+		E9110E162507826A00670540 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				E9110E132507759900670540 /* GTMBase64.h */,
+				E9110E142507759900670540 /* GTMBase64.m */,
+				E9110E122507759800670540 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9110DDE2507510300670540 /* LocalEncryptDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9110DF82507510500670540 /* Build configuration list for PBXNativeTarget "LocalEncryptDemo" */;
+			buildPhases = (
+				E9110DDB2507510300670540 /* Sources */,
+				E9110DDC2507510300670540 /* Frameworks */,
+				E9110DDD2507510300670540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalEncryptDemo;
+			productName = LocalEncryptDemo;
+			productReference = E9110DDF2507510300670540 /* LocalEncryptDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9110DD72507510300670540 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = xiejiapei;
+				TargetAttributes = {
+					E9110DDE2507510300670540 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = E9110DDA2507510300670540 /* Build configuration list for PBXProject "LocalEncryptDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9110DD62507510300670540;
+			productRefGroup = E9110DE02507510300670540 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9110DDE2507510300670540 /* LocalEncryptDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9110DDD2507510300670540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9110DF22507510500670540 /* LaunchScreen.storyboard in Resources */,
+				E9110DEF2507510500670540 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9110DDB2507510300670540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9110E062507616700670540 /* SAMKeychainQuery.m in Sources */,
+				E9110DE42507510300670540 /* AppDelegate.m in Sources */,
+				E9110E072507616700670540 /* SAMKeychain.m in Sources */,
+				E9110E152507759900670540 /* GTMBase64.m in Sources */,
+				E9110DFE2507520300670540 /* LocalEncryptViewController.m in Sources */,
+				E9110E1125076F4200670540 /* NSData+AES.m in Sources */,
+				E9110E0E2507642000670540 /* LocalEncryptService.m in Sources */,
+				E9110DF52507510500670540 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9110DF02507510500670540 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9110DF12507510500670540 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9110DF62507510500670540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9110DF72507510500670540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9110DF92507510500670540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRMHT335N6;
+				INFOPLIST_FILE = LocalEncryptDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiejiapei.LocalEncryptDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9110DFA2507510500670540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRMHT335N6;
+				INFOPLIST_FILE = LocalEncryptDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiejiapei.LocalEncryptDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9110DDA2507510300670540 /* Build configuration list for PBXProject "LocalEncryptDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9110DF62507510500670540 /* Debug */,
+				E9110DF72507510500670540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9110DF82507510500670540 /* Build configuration list for PBXNativeTarget "LocalEncryptDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9110DF92507510500670540 /* Debug */,
+				E9110DFA2507510500670540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9110DD72507510300670540 /* Project object */;
+}
