@@ -197,5 +197,83 @@
     [queue addOperation:operation2];
 }
 
+//A B C D E F
+//A,B - D
+//B,C - E
+//D,E - F
+- (void)addDependencyDemo
+{
+    //A
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 3; i ++)
+        {
+            NSLog(@"A --------------- %@", [NSThread currentThread]);
+        }
+    }];
+    
+    //B
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 3; i ++)
+        {
+            NSLog(@"B --------------- %@", [NSThread currentThread]);
+        }
+    }];
+    
+    //C
+    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 3; i ++)
+        {
+            NSLog(@"C --------------- %@", [NSThread currentThread]);
+        }
+    }];
+    
+    //D
+    NSBlockOperation *op4 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 3; i ++)
+        {
+            NSLog(@"D --------------- %@", [NSThread currentThread]);
+        }
+    }];
+    
+    //E
+    NSBlockOperation *op5 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 3; i ++)
+        {
+            NSLog(@"E --------------- %@", [NSThread currentThread]);
+        }
+    }];
+    
+    //F
+    NSBlockOperation *op6 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 3; i ++)
+        {
+            NSLog(@"F --------------- %@", [NSThread currentThread]);
+        }
+    }];
+    
+    // 配置依赖关系
+    [op4 addDependency: op1];
+    [op4 addDependency: op2];
+    
+    [op5 addDependency: op2];
+    [op5 addDependency: op3];
+    
+    [op6 addDependency:op4];
+    [op6 addDependency:op5];
+    
+    // 在操作队列中添加任务
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    // 并发与否取决于这个值
+    queue.maxConcurrentOperationCount = 6;
+    
+    [queue addOperation: op6];
+    [queue addOperation: op5];
+    [queue addOperation: op4];
+    [queue addOperation: op3];
+    [queue addOperation: op2];
+    [queue addOperation: op1];
+}
+
+
 @end
 
