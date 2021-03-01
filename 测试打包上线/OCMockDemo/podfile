@@ -1,0 +1,6 @@
+target 'OCMockDemo' do
+  target 'OCMockDemoTests' do
+    inherit! :search_paths
+	pod 'OCMock'
+  end
+end

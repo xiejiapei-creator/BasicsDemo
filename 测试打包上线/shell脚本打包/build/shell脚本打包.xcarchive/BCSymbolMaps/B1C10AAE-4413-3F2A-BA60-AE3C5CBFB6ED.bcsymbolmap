@@ -1,0 +1,51 @@
+BCSymbolMap Version: 2.0
+-[ViewController viewDidLoad]
+_OBJC_CLASS_$_ViewController
+_OBJC_SELECTOR_REFERENCES_
+__OBJC_METACLASS_RO_$_ViewController
+_OBJC_METACLASS_$_ViewController
+__OBJC_$_INSTANCE_METHODS_ViewController
+__OBJC_CLASS_RO_$_ViewController
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk
+iPhoneOS14.4.sdk
+/Users/xiejiapei/Desktop/shell脚本打包/shell脚本打包/ViewController.m
+/Users/xiejiapei/Desktop/shell脚本打包
+shell脚本打包/ViewController.m
+_OBJC_CLASS_$_AppDelegate
+_OBJC_CLASSLIST_REFERENCES_$_
+/Users/xiejiapei/Desktop/shell脚本打包/shell脚本打包/SupportingFiles/main.m
+main
+shell脚本打包/SupportingFiles/main.m
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[AppDelegate applicationWillResignActive:]
+-[AppDelegate applicationDidEnterBackground:]
+-[AppDelegate applicationWillEnterForeground:]
+-[AppDelegate applicationDidBecomeActive:]
+-[AppDelegate applicationWillTerminate:]
+-[AppDelegate window]
+-[AppDelegate setWindow:]
+-[AppDelegate .cxx_destruct]
+_OBJC_IVAR_$_AppDelegate._window
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
+__OBJC_$_PROP_LIST_UIApplicationDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIApplicationDelegate
+__OBJC_PROTOCOL_$_UIApplicationDelegate
+__OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+__OBJC_CLASS_PROTOCOLS_$_AppDelegate
+__OBJC_METACLASS_RO_$_AppDelegate
+_OBJC_METACLASS_$_AppDelegate
+__OBJC_$_INSTANCE_METHODS_AppDelegate
+__OBJC_$_INSTANCE_VARIABLES_AppDelegate
+__OBJC_$_PROP_LIST_AppDelegate
+__OBJC_CLASS_RO_$_AppDelegate
+/Users/xiejiapei/Desktop/shell脚本打包/shell脚本打包/SupportingFiles/AppDelegate.m
+shell脚本打包/SupportingFiles/AppDelegate.m
+shell脚本打包/SupportingFiles/AppDelegate.h

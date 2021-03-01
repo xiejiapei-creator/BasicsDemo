@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SynchronizedDemo : BaseLock
 
+@property (nonatomic, strong) NSMutableArray *mutableArray;
+
 @end
 
 NS_ASSUME_NONNULL_END

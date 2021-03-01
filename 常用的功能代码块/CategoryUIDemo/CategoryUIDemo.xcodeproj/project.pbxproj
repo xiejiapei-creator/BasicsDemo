@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9A154BA25E4A9CD00128708 /* ImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A154B825E4A9CD00128708 /* ImageTool.m */; };
 		E9CE8873256F4E7C00796C8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE8872256F4E7C00796C8B /* AppDelegate.m */; };
 		E9CE887E256F4E7E00796C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE887D256F4E7E00796C8B /* Assets.xcassets */; };
 		E9CE8881256F4E7E00796C8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE887F256F4E7E00796C8B /* LaunchScreen.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9A154B825E4A9CD00128708 /* ImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTool.m; sourceTree = "<group>"; };
+		E9A154B925E4A9CD00128708 /* ImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTool.h; sourceTree = "<group>"; };
 		E9CE886E256F4E7C00796C8B /* CategoryUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE8871256F4E7C00796C8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9CE8872256F4E7C00796C8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -223,10 +226,12 @@
 		E9CE88FC256F506100796C8B /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				E9A154B925E4A9CD00128708 /* ImageTool.h */,
+				E9A154B825E4A9CD00128708 /* ImageTool.m */,
 				E9CE88FD256F506100796C8B /* UIImage+Custom.m */,
+				E9CE8900256F506100796C8B /* UIImage+Custom.h */,
 				E9CE88FE256F506100796C8B /* testUIImageViewController.h */,
 				E9CE88FF256F506100796C8B /* testUIImageViewController.m */,
-				E9CE8900256F506100796C8B /* UIImage+Custom.h */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				E9CE8910256F506100796C8B /* testUIImageViewController.m in Sources */,
 				E9CE8901256F506100796C8B /* NSString+Custom.m in Sources */,
 				E9CE890A256F506100796C8B /* UIViewController+Custom.m in Sources */,
+				E9A154BA25E4A9CD00128708 /* ImageTool.m in Sources */,
 				E9CE890E256F506100796C8B /* testUIScreenViewController.m in Sources */,
 				E9CE8908256F506100796C8B /* testUIColorViewController.m in Sources */,
 				E9CE8956256F820700796C8B /* UITableView+Custom.m in Sources */,

@@ -17,11 +17,9 @@
 
 @implementation GCDViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    [self testGCDTimer];
 }
 
 // 串行同步
@@ -459,3 +457,5 @@
 }
 
 @end
+
+

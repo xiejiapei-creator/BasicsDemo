@@ -10,7 +10,7 @@
 #import "ResidentThreadBySourceViewController.h"
 #import "ResidentThreadByPortViewController.h"
 #import "ResidentThreadByTimerViewController.h"
-
+#import "SourceCodeAnalysisViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ResidentThreadByPortViewController *rootVC = [[ResidentThreadByPortViewController alloc] init];
+    SourceCodeAnalysisViewController *rootVC = [[SourceCodeAnalysisViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

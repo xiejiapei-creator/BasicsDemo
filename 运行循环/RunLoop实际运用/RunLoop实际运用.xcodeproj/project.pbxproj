@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9A1547825E491A600128708 /* SourceCodeAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1547725E491A600128708 /* SourceCodeAnalysisViewController.m */; };
 		E9E39F8224EE175E00654AE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E39F8124EE175E00654AE1 /* AppDelegate.m */; };
 		E9E39F8D24EE176000654AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E39F8C24EE176000654AE1 /* Assets.xcassets */; };
 		E9E39F9024EE176000654AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E39F8E24EE176000654AE1 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9A1547625E491A600128708 /* SourceCodeAnalysisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceCodeAnalysisViewController.h; sourceTree = "<group>"; };
+		E9A1547725E491A600128708 /* SourceCodeAnalysisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceCodeAnalysisViewController.m; sourceTree = "<group>"; };
 		E9E39F7D24EE175E00654AE1 /* RunLoop实际运用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunLoop实际运用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E39F8024EE175E00654AE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9E39F8124EE175E00654AE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9A1547525E4917800128708 /* 源码解析 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A1547625E491A600128708 /* SourceCodeAnalysisViewController.h */,
+				E9A1547725E491A600128708 /* SourceCodeAnalysisViewController.m */,
+			);
+			path = "源码解析";
+			sourceTree = "<group>";
+		};
 		E9E39F7424EE175E00654AE1 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 		E9E39F7F24EE175E00654AE1 /* RunLoop实际运用 */ = {
 			isa = PBXGroup;
 			children = (
+				E9A1547525E4917800128708 /* 源码解析 */,
 				E9E39FA724EE26B800654AE1 /* 线程间通信 */,
 				E9E39F9D24EE19E800654AE1 /* 常驻线程 */,
 				E9E39F9924EE176F00654AE1 /* SupportingFiles */,
@@ -185,6 +198,7 @@
 				E9E39FAA24EE26FC00654AE1 /* ThreadCommunicationByPortViewController.m in Sources */,
 				E9E39F8224EE175E00654AE1 /* AppDelegate.m in Sources */,
 				E9E39FA324EE1A8200654AE1 /* ResidentThreadBySourceViewController.m in Sources */,
+				E9A1547825E491A600128708 /* SourceCodeAnalysisViewController.m in Sources */,
 				E9E39F9324EE176000654AE1 /* main.m in Sources */,
 				E9E39FA624EE1C4B00654AE1 /* ResidentThreadByTimerViewController.m in Sources */,
 				E9E39FAD24EE419C00654AE1 /* ThreadCommunicationBySourceViewController.m in Sources */,

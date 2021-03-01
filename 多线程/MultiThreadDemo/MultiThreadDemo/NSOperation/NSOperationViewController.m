@@ -25,6 +25,9 @@
 
 @interface NSOperationViewController ()
 
+@property (nonatomic, strong) NSOperationQueue *queue;
+@property (nonatomic, strong) NSInvocationOperation *invocationOperation;
+
 @end
 
 @implementation NSOperationViewController
@@ -79,9 +82,38 @@
 }
 
 // 使用继承自NSOperation的子类
-- (void)testCustomOperation {
+- (void)testCustomOperation
+{
     CustomOperation *operation = [[CustomOperation alloc] init];
     [operation start];
+}
+
+// 暂停或者继续操作
+- (void)pauseOrContinue
+{
+    if (self.queue.operationCount == 0)
+    {
+        NSLog(@"当前没有操作，没有必要挂起和继续");
+        return;
+    }
+    
+    if (self.queue.suspended)
+    {
+        NSLog(@"当前是挂起状态，准备继续");
+    }
+    else
+    {
+        // 正在执行的操作无法挂起，当前操作执行完毕后开始挂起，下个操作不再执行
+        NSLog(@"当前为执行状态，准备挂起");
+    }
+    self.queue.suspended = !self.queue.isSuspended;
+}
+
+// 取消操作
+- (void)cancelOperation
+{
+    [self.queue cancelAllOperations];// 取消所有操作
+    [self.invocationOperation cancel];// 取消NSOperation的某个操作
 }
 
 #pragma mark - 将操作添加到队列
@@ -274,6 +306,37 @@
     [queue addOperation: op1];
 }
 
+// 优先级：不是说设置高优先级就一定全部先完成，只是让CPU有更高的几率去调用它
+- (void)testQualityOfService
+{
+    // 创建吃饭的操作
+    NSBlockOperation *eatBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 10; i++)
+        {
+            NSLog(@"人是铁饭是钢一顿不吃饿得慌～，%d --- %@", i, [NSThread currentThread]);
+        }
+    }];
+    // 设置优先级为用户交互
+    eatBlockOperation.qualityOfService = NSQualityOfServiceUserInteractive;
+    
+    // 创建睡觉的操作
+    NSBlockOperation *sleepBlockOperation = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 10; i++)
+        {
+            NSLog(@"老师别布置作业了，我好困啊～，%d --- %@", i, [NSThread currentThread]);
+        }
+    }];
+    // 设置优先级为后台任务
+    sleepBlockOperation.qualityOfService = NSQualityOfServiceBackground;
+    
+    // 创建队列
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    // 添加操作到队列
+    [queue addOperation:eatBlockOperation];
+    [queue addOperation:sleepBlockOperation];
+}
+
 
 @end
+
 

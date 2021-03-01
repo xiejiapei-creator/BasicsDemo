@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TopicViewController.h"
+#import "FileStreamViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    TopicViewController *rootVC = [[TopicViewController alloc] init];
+    FileStreamViewController *rootVC = [[FileStreamViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

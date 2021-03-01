@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5FF22E7EAE3E2F8CFCEB6A9E /* libPods-NetworkRequestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 636562C260041D75FA787828 /* libPods-NetworkRequestDemo.a */; };
 		E95A83462540447600B34438 /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95A83452540447600B34438 /* TopicViewController.m */; };
+		E9A1545125E3A01400128708 /* FileStreamNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1545025E3A01400128708 /* FileStreamNetworkTool.m */; };
+		E9A1545625E3A31D00128708 /* FileStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1545525E3A31D00128708 /* FileStreamViewController.m */; };
 		E9E39FDC24EF9F4400654AE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E39FDB24EF9F4400654AE1 /* AppDelegate.m */; };
 		E9E39FE724EF9F4500654AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E39FE624EF9F4500654AE1 /* Assets.xcassets */; };
 		E9E39FEA24EF9F4500654AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E39FE824EF9F4500654AE1 /* LaunchScreen.storyboard */; };
@@ -24,6 +26,10 @@
 		636562C260041D75FA787828 /* libPods-NetworkRequestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkRequestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95A83442540447600B34438 /* TopicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopicViewController.h; sourceTree = "<group>"; };
 		E95A83452540447600B34438 /* TopicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopicViewController.m; sourceTree = "<group>"; };
+		E9A1544F25E3A01400128708 /* FileStreamNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileStreamNetworkTool.h; sourceTree = "<group>"; };
+		E9A1545025E3A01400128708 /* FileStreamNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileStreamNetworkTool.m; sourceTree = "<group>"; };
+		E9A1545425E3A31D00128708 /* FileStreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileStreamViewController.h; sourceTree = "<group>"; };
+		E9A1545525E3A31D00128708 /* FileStreamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileStreamViewController.m; sourceTree = "<group>"; };
 		E9E39FD724EF9F4400654AE1 /* NetworkRequestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkRequestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E39FDA24EF9F4400654AE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9E39FDB24EF9F4400654AE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +83,17 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		E9A1544E25E39FF600128708 /* 文件流下载 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A1544F25E3A01400128708 /* FileStreamNetworkTool.h */,
+				E9A1545025E3A01400128708 /* FileStreamNetworkTool.m */,
+				E9A1545425E3A31D00128708 /* FileStreamViewController.h */,
+				E9A1545525E3A31D00128708 /* FileStreamViewController.m */,
+			);
+			path = "文件流下载";
+			sourceTree = "<group>";
+		};
 		E9E39FCE24EF9F4400654AE1 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +115,7 @@
 		E9E39FD924EF9F4400654AE1 /* NetworkRequestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9A1544E25E39FF600128708 /* 文件流下载 */,
 				E9E39FFC24EFD56600654AE1 /* NSURLConnection */,
 				E9E39FF824EFBC8F00654AE1 /* AFNetworking */,
 				E9E39FF424EF9FB600654AE1 /* NSURLSession */,
@@ -242,11 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A1545625E3A31D00128708 /* FileStreamViewController.m in Sources */,
 				E9E39FDC24EF9F4400654AE1 /* AppDelegate.m in Sources */,
 				E9E39FFB24EFBCA600654AE1 /* AFNetworkingViewController.m in Sources */,
 				E95A83462540447600B34438 /* TopicViewController.m in Sources */,
 				E9E39FED24EF9F4500654AE1 /* main.m in Sources */,
 				E9E39FF724EF9FEE00654AE1 /* NSURLSessionViewController.m in Sources */,
+				E9A1545125E3A01400128708 /* FileStreamNetworkTool.m in Sources */,
 				E9E3A00224F3557000654AE1 /* NSURLConnectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9A1543A25E38F1900128708 /* KVOPrincipleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1543925E38F1900128708 /* KVOPrincipleViewController.m */; };
+		E9A1544325E390C700128708 /* KVOPrincipleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1544225E390C700128708 /* KVOPrincipleModel.m */; };
+		E9A1545F25E3B10200128708 /* NSObject+CustomKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1545E25E3B10200128708 /* NSObject+CustomKVO.m */; };
+		E9A1546B25E3B7D000128708 /* CustomKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A1546A25E3B7D000128708 /* CustomKVOViewController.m */; };
+		E9A154DA25E4D02E00128708 /* NSObject+CustomKVOAdvanced.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A154D925E4D02E00128708 /* NSObject+CustomKVOAdvanced.m */; };
+		E9A154E325E4D1AE00128708 /* KVOInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A154E225E4D1AE00128708 /* KVOInfo.m */; };
+		E9A154E925E4DA1F00128708 /* CustomAdvancedKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A154E825E4DA1F00128708 /* CustomAdvancedKVOViewController.m */; };
 		E9E75AB4251CAA1E008759E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E75AB3251CAA1E008759E3 /* AppDelegate.m */; };
 		E9E75ABF251CAA1F008759E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E75ABE251CAA1F008759E3 /* Assets.xcassets */; };
 		E9E75AC2251CAA1F008759E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E75AC0251CAA1F008759E3 /* LaunchScreen.storyboard */; };
@@ -37,6 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9A1543825E38F1900128708 /* KVOPrincipleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPrincipleViewController.h; sourceTree = "<group>"; };
+		E9A1543925E38F1900128708 /* KVOPrincipleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOPrincipleViewController.m; sourceTree = "<group>"; };
+		E9A1544125E390C700128708 /* KVOPrincipleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOPrincipleModel.h; sourceTree = "<group>"; };
+		E9A1544225E390C700128708 /* KVOPrincipleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOPrincipleModel.m; sourceTree = "<group>"; };
+		E9A1545D25E3B10200128708 /* NSObject+CustomKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CustomKVO.h"; sourceTree = "<group>"; };
+		E9A1545E25E3B10200128708 /* NSObject+CustomKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CustomKVO.m"; sourceTree = "<group>"; };
+		E9A1546925E3B7D000128708 /* CustomKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomKVOViewController.h; sourceTree = "<group>"; };
+		E9A1546A25E3B7D000128708 /* CustomKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomKVOViewController.m; sourceTree = "<group>"; };
+		E9A154D825E4D02E00128708 /* NSObject+CustomKVOAdvanced.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CustomKVOAdvanced.h"; sourceTree = "<group>"; };
+		E9A154D925E4D02E00128708 /* NSObject+CustomKVOAdvanced.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CustomKVOAdvanced.m"; sourceTree = "<group>"; };
+		E9A154E125E4D1AE00128708 /* KVOInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOInfo.h; sourceTree = "<group>"; };
+		E9A154E225E4D1AE00128708 /* KVOInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOInfo.m; sourceTree = "<group>"; };
+		E9A154E725E4DA1F00128708 /* CustomAdvancedKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAdvancedKVOViewController.h; sourceTree = "<group>"; };
+		E9A154E825E4DA1F00128708 /* CustomAdvancedKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomAdvancedKVOViewController.m; sourceTree = "<group>"; };
 		E9E75AAF251CAA1E008759E3 /* KVO_KVC_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVO_KVC_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E75AB2251CAA1E008759E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9E75AB3251CAA1E008759E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,6 +106,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9A1543725E38ECC00128708 /* KVO的原理 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A1543825E38F1900128708 /* KVOPrincipleViewController.h */,
+				E9A1543925E38F1900128708 /* KVOPrincipleViewController.m */,
+				E9A1544125E390C700128708 /* KVOPrincipleModel.h */,
+				E9A1544225E390C700128708 /* KVOPrincipleModel.m */,
+			);
+			path = "KVO的原理";
+			sourceTree = "<group>";
+		};
+		E9A1545C25E3B0DB00128708 /* 自定义KVO */ = {
+			isa = PBXGroup;
+			children = (
+				E9A1545D25E3B10200128708 /* NSObject+CustomKVO.h */,
+				E9A1545E25E3B10200128708 /* NSObject+CustomKVO.m */,
+				E9A154D825E4D02E00128708 /* NSObject+CustomKVOAdvanced.h */,
+				E9A154D925E4D02E00128708 /* NSObject+CustomKVOAdvanced.m */,
+				E9A1546925E3B7D000128708 /* CustomKVOViewController.h */,
+				E9A1546A25E3B7D000128708 /* CustomKVOViewController.m */,
+				E9A154E725E4DA1F00128708 /* CustomAdvancedKVOViewController.h */,
+				E9A154E825E4DA1F00128708 /* CustomAdvancedKVOViewController.m */,
+				E9A154E125E4D1AE00128708 /* KVOInfo.h */,
+				E9A154E225E4D1AE00128708 /* KVOInfo.m */,
+			);
+			path = "自定义KVO";
+			sourceTree = "<group>";
+		};
 		E9E75AA6251CAA1E008759E3 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +157,8 @@
 		E9E75AB1251CAA1E008759E3 /* KVO_KVC_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E9A1545C25E3B0DB00128708 /* 自定义KVO */,
+				E9A1543725E38ECC00128708 /* KVO的原理 */,
 				E9E75B15251D850B008759E3 /* KVC的使用 */,
 				E9E75AF1251CAABC008759E3 /* KVO的使用 */,
 				E9E75AF0251CAA6E008759E3 /* SupportingFiles */,
@@ -320,12 +371,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A154E925E4DA1F00128708 /* CustomAdvancedKVOViewController.m in Sources */,
 				E9E75AF4251CAACC008759E3 /* KVOUseViewController.m in Sources */,
+				E9A154DA25E4D02E00128708 /* NSObject+CustomKVOAdvanced.m in Sources */,
 				E9E75B02251D8104008759E3 /* ManualKVOViewController.m in Sources */,
+				E9A1546B25E3B7D000128708 /* CustomKVOViewController.m in Sources */,
+				E9A1543A25E38F1900128708 /* KVOPrincipleViewController.m in Sources */,
 				E9E75B0C251D821C008759E3 /* KVODependentKeyViewController.m in Sources */,
 				E9E75AB4251CAA1E008759E3 /* AppDelegate.m in Sources */,
+				E9A1544325E390C700128708 /* KVOPrincipleModel.m in Sources */,
+				E9A154E325E4D1AE00128708 /* KVOInfo.m in Sources */,
 				E9E75AC5251CAA1F008759E3 /* main.m in Sources */,
 				E9E75B18251D855F008759E3 /* KVCUseViewController.m in Sources */,
+				E9A1545F25E3B10200128708 /* NSObject+CustomKVO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

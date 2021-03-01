@@ -8,6 +8,9 @@
 #import "AppDelegate.h"
 #import "KVOUseViewController.h"
 #import "KVCUseViewController.h"
+#import "KVOPrincipleViewController.h"
+#import "CustomKVOViewController.h"
+#import "CustomAdvancedKVOViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    KVCUseViewController *rootVC = [[KVCUseViewController alloc] init];
+    CustomAdvancedKVOViewController *rootVC = [[CustomAdvancedKVOViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

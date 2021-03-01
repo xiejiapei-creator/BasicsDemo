@@ -1,0 +1,8 @@
+app_identifier("com.xiejiapei") # The bundle identifier of your app
+apple_id("2170928274@qq.com") # Your Apple email address
+
+itc_team_id("119112490") # App Store Connect Team ID
+team_id("U5LAHK8PW6") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

@@ -13,8 +13,12 @@
 		E92D474424DA5BD400DB18D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92D474224DA5BD400DB18D7 /* LaunchScreen.storyboard */; };
 		E92D474724DA5BD400DB18D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E92D474624DA5BD400DB18D7 /* main.m */; };
 		E92D475324DA5C2700DB18D7 /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92D474E24DA5C2700DB18D7 /* DownLoadViewController.m */; };
-		E92D475424DA5C2700DB18D7 /* DownLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92D475024DA5C2700DB18D7 /* DownLoadViewController.xib */; };
 		E92D475524DA5C2700DB18D7 /* NetworkServerDownLoadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E92D475224DA5C2700DB18D7 /* NetworkServerDownLoadTool.m */; };
+		E9F7DA3825E10BA3009E3938 /* JsonData in Resources */ = {isa = PBXBuildFile; fileRef = E9F7DA3525E10BA3009E3938 /* JsonData */; };
+		E9F7DA3925E10BA3009E3938 /* JsonDatas in Resources */ = {isa = PBXBuildFile; fileRef = E9F7DA3625E10BA3009E3938 /* JsonDatas */; };
+		E9F7DA3A25E10BA3009E3938 /* XmlData in Resources */ = {isa = PBXBuildFile; fileRef = E9F7DA3725E10BA3009E3938 /* XmlData */; };
+		E9F7DA4225E10E60009E3938 /* DownloadNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F7DA4125E10E60009E3938 /* DownloadNetworkTool.m */; };
+		E9F7DA4625E11829009E3938 /* URLSessionDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F7DA4525E11829009E3938 /* URLSessionDownloadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +34,15 @@
 		E92D474624DA5BD400DB18D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E92D474E24DA5C2700DB18D7 /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
 		E92D474F24DA5C2700DB18D7 /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
-		E92D475024DA5C2700DB18D7 /* DownLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownLoadViewController.xib; sourceTree = "<group>"; };
 		E92D475124DA5C2700DB18D7 /* NetworkServerDownLoadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkServerDownLoadTool.h; sourceTree = "<group>"; };
 		E92D475224DA5C2700DB18D7 /* NetworkServerDownLoadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkServerDownLoadTool.m; sourceTree = "<group>"; };
+		E9F7DA3525E10BA3009E3938 /* JsonData */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonData; sourceTree = "<group>"; };
+		E9F7DA3625E10BA3009E3938 /* JsonDatas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonDatas; sourceTree = "<group>"; };
+		E9F7DA3725E10BA3009E3938 /* XmlData */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = XmlData; sourceTree = "<group>"; };
+		E9F7DA4025E10E60009E3938 /* DownloadNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadNetworkTool.h; sourceTree = "<group>"; };
+		E9F7DA4125E10E60009E3938 /* DownloadNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadNetworkTool.m; sourceTree = "<group>"; };
+		E9F7DA4425E11829009E3938 /* URLSessionDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLSessionDownloadViewController.h; sourceTree = "<group>"; };
+		E9F7DA4525E11829009E3938 /* URLSessionDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLSessionDownloadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +71,6 @@
 				C1D986B974822B3084FD6835 /* Pods-BreakpointContinuationDemo.debug.xcconfig */,
 				007AE5953697D73914F5F8ED /* Pods-BreakpointContinuationDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,11 +95,8 @@
 		E92D473324DA5BD400DB18D7 /* BreakpointContinuationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E92D474F24DA5C2700DB18D7 /* DownLoadViewController.h */,
-				E92D474E24DA5C2700DB18D7 /* DownLoadViewController.m */,
-				E92D475024DA5C2700DB18D7 /* DownLoadViewController.xib */,
-				E92D475124DA5C2700DB18D7 /* NetworkServerDownLoadTool.h */,
-				E92D475224DA5C2700DB18D7 /* NetworkServerDownLoadTool.m */,
+				E9F7DA3425E10B7C009E3938 /* 基于NSURLSession */,
+				E9F7DA3125E1085A009E3938 /* 基于AFNetworking */,
 				E92D474D24DA5BE600DB18D7 /* SupportingFiles */,
 				E92D474524DA5BD400DB18D7 /* Info.plist */,
 			);
@@ -105,8 +111,33 @@
 				E92D474024DA5BD400DB18D7 /* Assets.xcassets */,
 				E92D474224DA5BD400DB18D7 /* LaunchScreen.storyboard */,
 				E92D474624DA5BD400DB18D7 /* main.m */,
+				E9F7DA3525E10BA3009E3938 /* JsonData */,
+				E9F7DA3625E10BA3009E3938 /* JsonDatas */,
+				E9F7DA3725E10BA3009E3938 /* XmlData */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E9F7DA3125E1085A009E3938 /* 基于AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E92D475124DA5C2700DB18D7 /* NetworkServerDownLoadTool.h */,
+				E92D475224DA5C2700DB18D7 /* NetworkServerDownLoadTool.m */,
+				E92D474F24DA5C2700DB18D7 /* DownLoadViewController.h */,
+				E92D474E24DA5C2700DB18D7 /* DownLoadViewController.m */,
+			);
+			path = "基于AFNetworking";
+			sourceTree = "<group>";
+		};
+		E9F7DA3425E10B7C009E3938 /* 基于NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				E9F7DA4025E10E60009E3938 /* DownloadNetworkTool.h */,
+				E9F7DA4125E10E60009E3938 /* DownloadNetworkTool.m */,
+				E9F7DA4425E11829009E3938 /* URLSessionDownloadViewController.h */,
+				E9F7DA4525E11829009E3938 /* URLSessionDownloadViewController.m */,
+			);
+			path = "基于NSURLSession";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +198,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F7DA3925E10BA3009E3938 /* JsonDatas in Resources */,
+				E9F7DA3A25E10BA3009E3938 /* XmlData in Resources */,
 				E92D474424DA5BD400DB18D7 /* LaunchScreen.storyboard in Resources */,
+				E9F7DA3825E10BA3009E3938 /* JsonData in Resources */,
 				E92D474124DA5BD400DB18D7 /* Assets.xcassets in Resources */,
-				E92D475424DA5C2700DB18D7 /* DownLoadViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F7DA4625E11829009E3938 /* URLSessionDownloadViewController.m in Sources */,
 				E92D473624DA5BD400DB18D7 /* AppDelegate.m in Sources */,
+				E9F7DA4225E10E60009E3938 /* DownloadNetworkTool.m in Sources */,
 				E92D475524DA5C2700DB18D7 /* NetworkServerDownLoadTool.m in Sources */,
 				E92D475324DA5C2700DB18D7 /* DownLoadViewController.m in Sources */,
 				E92D474724DA5BD400DB18D7 /* main.m in Sources */,

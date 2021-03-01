@@ -1,0 +1,13 @@
+target 'shell打包上线' do
+  pod 'AFNetworking'
+  target 'shell打包上线Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'shell打包上线UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
