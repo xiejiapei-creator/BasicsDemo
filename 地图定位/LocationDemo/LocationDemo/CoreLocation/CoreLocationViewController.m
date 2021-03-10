@@ -193,7 +193,7 @@
             {
                 //省、市、县、街
                 self.place = [NSString stringWithFormat:@"省：%@，市：%@，街道：%@ %@",placeMark.administrativeArea,placeMark.locality,placeMark.subLocality,placeMark.thoroughfare];
-                NSLog(@"在下当前所在位置位：%@",self.place);
+                NSLog(@"在下当前所在位置为：%@",self.place);
             }
         }
     }];
@@ -203,7 +203,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
     // magneticHeading: 设备与磁北的相对角度
-    // trueHeading：设置与真北的相对角度，真北始终指向地理北极点，必须和定位一起使用，iOS需要设置的位置来计算真北
+    // trueHeading：设备与真北的相对角度，真北始终指向地理北极点
     NSLog(@"设备与磁北的相对角度：%f",newHeading.magneticHeading);
 
     // 将获取到的角度转为弧度 = (角度 * π) / 180;
@@ -235,4 +235,3 @@
  
 
 @end
- 
