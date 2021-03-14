@@ -142,8 +142,8 @@
 		E95A833625403D4600B34438 /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
-				E95A833725403D4600B34438 /* TimerViewController.m */,
 				E95A833825403D4600B34438 /* TimerViewController.h */,
+				E95A833725403D4600B34438 /* TimerViewController.m */,
 			);
 			path = NSTimer;
 			sourceTree = "<group>";

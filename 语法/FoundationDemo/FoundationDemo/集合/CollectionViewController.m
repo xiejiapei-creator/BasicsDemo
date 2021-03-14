@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    [self countedSet];
+    [self performSelector];
 }
 
 #pragma mark - 数组
@@ -50,7 +50,7 @@
     
     NSArray *array = @[@"xie",@"jia",@"pei",@"fan",@"yi",@"cheng",@"lin",@"feng",@"mian"];
     NSArray *newArray = [array objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(2, 3)]];
-    NSLog(@"获取索引从2~5的元素组成的新集合:%@",newArray);
+    NSLog(@"获取索引从3~6的元素组成的新集合:%@",newArray);
     
     NSLog(@"获取元素在集合中的位置:%lu",(unsigned long)[array indexOfObject:@"xie"]);
     
@@ -58,7 +58,7 @@
     NSLog(@"向array数组的最后追加另一个数组的所有元素:%@",array);
     
     array = [array subarrayWithRange:NSMakeRange(5, 3)];
-    NSLog(@"索引为5~8处的所有元素:%@",array);
+    NSLog(@"索引为6~9处的所有元素:%@",array);
 }
 
 // 给数组排序
@@ -151,8 +151,8 @@ NSInteger intSort(id num1, id num2, void *context)
     NSMutableArray *mutableCopyArray = [bArray mutableCopy];
     NSLog(@"原数组为不可变数组——使用mutableCopy——结果数组为可变数组，比较是否相等的结果为：%@", mutableCopyArray == bArray ? @"相等" : @"不相等");
     
-    NSMutableArray *copyArray = [mutableCopyArray copy];
-    NSLog(@"原数组为可变数组——使用copy——结果数组为可变数组，比较是否相等的结果为：%@", copyArray == mutableCopyArray ? @"相等" : @"不相等");
+    NSArray *copyArray = [mutableCopyArray copy];
+    NSLog(@"原数组为可变数组——使用copy——结果数组为不可变数组，比较是否相等的结果为：%@", copyArray == mutableCopyArray ? @"相等" : @"不相等");
     
     NSMutableArray *anotherMutableCopyArray = [mutableCopyArray mutableCopy];
     NSLog(@"原数组为可变数组——使用mutableCopy——结果数组为可变数组，比较是否相等的结果为：%@", anotherMutableCopyArray == mutableCopyArray ? @"相等" : @"不相等");
@@ -345,17 +345,22 @@ NSInteger intSort(id num1, id num2, void *context)
     set = [set setByAddingObjectsFromSet:newSet];
     NSLog(@"添加多个元素，相当于并集：%@",set);
     
-    [set intersectsSet:differenceSet];
-    NSLog(@"是否有交集：%@",set);
-    
-    [set isSubsetOfSet:differenceSet];
-    NSLog(@"是否有子集：%@",set);
-    
-    [set containsObject:@"xie"];
-    NSLog(@"集合中是否包含元素：%@",set);
-    
-    [set anyObject];
-    NSLog(@"随取元素：%@",set);
+    if ([set intersectsSet:differenceSet])
+    {
+        NSLog(@"有交集");
+    }
+
+    if ([set isSubsetOfSet:differenceSet])
+    {
+        NSLog(@"有子集");
+    }
+
+    if ([set containsObject:@"xie"])
+    {
+        NSLog(@"集合中包含元素xie");
+    }
+
+    NSLog(@"随取元素：%@",[set anyObject]);
     
     NSSet *filteredSet = [set objectsPassingTest:^BOOL(id  _Nonnull obj, BOOL * _Nonnull stop){
         return ([obj isEqualToString:@"xie"]);
@@ -398,3 +403,7 @@ NSInteger intSort(id num1, id num2, void *context)
 }
 
 @end
+
+
+
+

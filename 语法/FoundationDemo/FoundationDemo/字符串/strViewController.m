@@ -17,7 +17,7 @@
 {
     [super viewDidLoad];
     
-    [self pathArray];
+    [self attributedString];
 }
 
 // 范围

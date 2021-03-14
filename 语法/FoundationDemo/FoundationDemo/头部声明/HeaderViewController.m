@@ -97,6 +97,13 @@ typedef void(^MyBlock) (int a,int b);
 
 @implementation HeaderViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self useAttributeKey];
+}
+
 #pragma mark - 使用属性关键字
 
 - (void)useAttributeKey
@@ -114,7 +121,7 @@ typedef void(^MyBlock) (int a,int b);
     [testStr appendString:@"什么都知道"];
     
     // 正确的方式
-    NSLog(@"objWeak %@", aPerson.objStrong);
+    NSLog(@"objStrong %@", aPerson.objStrong);
     
     // weak会释放为null
     NSLog(@"objWeak %@", aPerson.objWeak);

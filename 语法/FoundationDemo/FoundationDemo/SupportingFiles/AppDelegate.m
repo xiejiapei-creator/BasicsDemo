@@ -12,6 +12,8 @@
 #import "DateViewController.h"
 #import "CollectionViewController.h"
 #import "strViewController.h"
+#import "HeaderViewController.h"
+#import "CollectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    CommonUseViewController *rootVC = [[CommonUseViewController alloc] init];
+    TimerViewController *rootVC = [[TimerViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

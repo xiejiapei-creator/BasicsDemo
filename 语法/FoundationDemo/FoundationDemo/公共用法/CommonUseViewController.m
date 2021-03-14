@@ -38,7 +38,7 @@
 {
     
     NSUInteger nameHash = (self.name == nil ? 0 : [self.name hash]);
-    NSUInteger ageHash = (self.age == nil ? 0 : [self.name hash]);
+    NSUInteger ageHash = (self.age == nil ? 0 : [self.age hash]);
     
     return nameHash * 31 + ageHash;
 }
@@ -117,6 +117,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self useSharedApplication];
 }
 
 #pragma mark - sharedApplication
@@ -185,9 +187,15 @@
     NSArray *copyArrayI = [sourceArrayI copy];
     NSArray *copyArrayM = [sourceArrayM copy];
     NSLog(@"=============使用copy后=============");
-    NSLog(@"【不可变原数组I】NSArray——>copy——>NSArray，变为：%@",copyArrayI);
-    NSLog(@"【可变原数组M】NSMutableArray——>copy——>NSArray，变为：%@",copyArrayM);
-
+    if ([sourceArrayI isEqualToArray:copyArrayI])
+    {
+        NSLog(@"【不可变原数组I】NSArray——>copy——>NSArray");
+    }
+    
+    if ([sourceArrayM isEqualToArray:copyArrayM])
+    {
+        NSLog(@"【可变原数组M】NSMutableArray——>copy——>NSArray");
+    }
     
     // 两个mutableCopy
     NSMutableArray *mutableArrayI = [sourceArrayI mutableCopy];
@@ -213,10 +221,10 @@
     Student *studentXie = [Student new];
     Student *studentFan = studentXie;
 
-    // 判断对象是否继承自NSObject
+    // 判断对象是否是个代理
     if ([studentXie isProxy])
     {
-        NSLog(@"student对象是继承自NSObject类");
+        NSLog(@"student对象是个代理");
     }
 
     // 判断两个对象是否相等

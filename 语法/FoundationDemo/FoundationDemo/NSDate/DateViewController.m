@@ -13,7 +13,8 @@
 
 @implementation DateViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     [self calculateDate];
@@ -90,8 +91,6 @@
     NSLocale *locale = [NSLocale currentLocale];// 系统当前的Locale
     [today descriptionWithLocale:locale];
     NSLog(@"时间的本地化：%@",today);
-    
-    
     
     // 创建两个NSLocale，分别代表中国、美国
     NSLocale *locales[] = {[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"], [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]};
