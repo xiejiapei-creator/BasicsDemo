@@ -43,7 +43,7 @@
     }
 }
 
-// 得到需要移除的View
+// 得到需要移除的ViewControllers
 - (NSMutableArray *)getNeedRemoveViewControllers:(NSArray *)array
 {
     NSMutableArray *arrayVC = [self.viewControllers mutableCopy];

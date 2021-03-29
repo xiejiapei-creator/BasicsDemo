@@ -91,8 +91,8 @@
 		E951578B255125120075AC6F /* 文本框校验 */ = {
 			isa = PBXGroup;
 			children = (
-				E951578C255125120075AC6F /* textFieldCheckViewController.m */,
 				E951578D255125120075AC6F /* textFieldCheckViewController.h */,
+				E951578C255125120075AC6F /* textFieldCheckViewController.m */,
 			);
 			path = "文本框校验";
 			sourceTree = "<group>";

@@ -114,38 +114,6 @@
             endingLineNumber = "53"
             landmarkName = "-drawRect:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8E367303-5B44-46C8-A224-52EED85ACEA0 - e464b2794645eac0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[Responder drawRect:]"
-                  moduleName = "UIKitGrammarDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xiejiapei/Desktop/Github/UIKitGrammarDemo/UIKitGrammarDemo/UIKitGrammarDemo/ViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "8E367303-5B44-46C8-A224-52EED85ACEA0 - e464b2794645eac0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[Responder drawRect:]"
-                  moduleName = "UIKitGrammarDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xiejiapei/Desktop/Github/UIKitGrammarDemo/UIKitGrammarDemo/UIKitGrammarDemo/ViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "116">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

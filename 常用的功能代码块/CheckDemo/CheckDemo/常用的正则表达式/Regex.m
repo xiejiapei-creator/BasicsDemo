@@ -249,7 +249,7 @@
 {
     NSString *condition = @"^[0-9]*$";// 是否都是数字
     //NSString *condition = @"^[A-Za-z]+$";//是否都是字母
-    //NSString *condition = @"^[A-Za-z0-9]+$";//是否都是字母和数字{6,16}
+    //NSString *condition = @"^[A-Za-z0-9]+$";//是否都是字母和数字
     //NSString *condition = @"^[A-Za-z0-9]{6,16}$";//是否都是字母和数字且长度在[6,16]
     //NSString *condition = @"^[\u4e00-\u9fa5]{0,}$";//只能输入汉字
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES%@",condition];

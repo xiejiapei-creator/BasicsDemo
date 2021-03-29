@@ -61,7 +61,6 @@
 {
     BOOL judgeTwoDecimalPlaces = [self JudgeTwoDecimalPlaces:textField shouldChangeCharactersInRange:range replacementString:string];
     return judgeTwoDecimalPlaces;
-    return YES;
 }
 
 #pragma mark - 校验方法

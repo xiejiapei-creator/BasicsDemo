@@ -20,7 +20,7 @@
 {
     if (self.contentSize.height > self.frame.size.height)
     {
-        CGPoint pointOffset = CGPointMake(0, self.contentSize.height -self.bounds.size.height);
+        CGPoint pointOffset = CGPointMake(0, self.contentSize.height - self.bounds.size.height);
         [self setContentOffset:pointOffset animated:YES];
     }
 }
