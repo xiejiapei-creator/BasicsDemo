@@ -15,6 +15,10 @@
 		E92522C8261202F500DC3ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92522C6261202F500DC3ECA /* LaunchScreen.storyboard */; };
 		E92522CB261202F500DC3ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E92522CA261202F500DC3ECA /* main.m */; };
 		E92522D826129D5800DC3ECA /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92522D726129D5800DC3ECA /* LoadingView.m */; };
+		E9BADC482612F76B007B3589 /* BallsLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BADC472612F76B007B3589 /* BallsLoadingView.m */; };
+		E9BADC4E2612FDD9007B3589 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BADC4D2612FDD9007B3589 /* TransitionViewController.m */; };
+		E9BADC5526130AC5007B3589 /* RippleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BADC5426130AC5007B3589 /* RippleLayer.m */; };
+		E9BADC5B26130EAA007B3589 /* RefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BADC5A26130EAA007B3589 /* RefreshView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,14 @@
 		E92522CA261202F500DC3ECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E92522D626129D5800DC3ECA /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		E92522D726129D5800DC3ECA /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		E9BADC462612F76B007B3589 /* BallsLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallsLoadingView.h; sourceTree = "<group>"; };
+		E9BADC472612F76B007B3589 /* BallsLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallsLoadingView.m; sourceTree = "<group>"; };
+		E9BADC4C2612FDD9007B3589 /* TransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
+		E9BADC4D2612FDD9007B3589 /* TransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
+		E9BADC5326130AC5007B3589 /* RippleLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RippleLayer.h; sourceTree = "<group>"; };
+		E9BADC5426130AC5007B3589 /* RippleLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RippleLayer.m; sourceTree = "<group>"; };
+		E9BADC5926130EAA007B3589 /* RefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshView.h; sourceTree = "<group>"; };
+		E9BADC5A26130EAA007B3589 /* RefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,10 @@
 		E92522B7261202EF00DC3ECA /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9BADC5826130E90007B3589 /* CADisplayLink */,
+				E9BADC5126130AAB007B3589 /* CAAnimationGroup */,
+				E9BADC4B2612FDBE007B3589 /* CATransition */,
+				E9BADC452612F758007B3589 /* CAKeyframeAnimation */,
 				E92522D526129D3600DC3ECA /* CABasicAnimation */,
 				E92522D32612032100DC3ECA /* UIView 动画 */,
 				E92522D2261202FF00DC3ECA /* SupportingFiles */,
@@ -103,6 +119,42 @@
 				E92522D726129D5800DC3ECA /* LoadingView.m */,
 			);
 			path = CABasicAnimation;
+			sourceTree = "<group>";
+		};
+		E9BADC452612F758007B3589 /* CAKeyframeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E9BADC462612F76B007B3589 /* BallsLoadingView.h */,
+				E9BADC472612F76B007B3589 /* BallsLoadingView.m */,
+			);
+			path = CAKeyframeAnimation;
+			sourceTree = "<group>";
+		};
+		E9BADC4B2612FDBE007B3589 /* CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				E9BADC4C2612FDD9007B3589 /* TransitionViewController.h */,
+				E9BADC4D2612FDD9007B3589 /* TransitionViewController.m */,
+			);
+			path = CATransition;
+			sourceTree = "<group>";
+		};
+		E9BADC5126130AAB007B3589 /* CAAnimationGroup */ = {
+			isa = PBXGroup;
+			children = (
+				E9BADC5326130AC5007B3589 /* RippleLayer.h */,
+				E9BADC5426130AC5007B3589 /* RippleLayer.m */,
+			);
+			path = CAAnimationGroup;
+			sourceTree = "<group>";
+		};
+		E9BADC5826130E90007B3589 /* CADisplayLink */ = {
+			isa = PBXGroup;
+			children = (
+				E9BADC5926130EAA007B3589 /* RefreshView.h */,
+				E9BADC5A26130EAA007B3589 /* RefreshView.m */,
+			);
+			path = CADisplayLink;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +227,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92522C0261202EF00DC3ECA /* ViewController.m in Sources */,
+				E9BADC5526130AC5007B3589 /* RippleLayer.m in Sources */,
+				E9BADC4E2612FDD9007B3589 /* TransitionViewController.m in Sources */,
 				E92522D826129D5800DC3ECA /* LoadingView.m in Sources */,
+				E9BADC482612F76B007B3589 /* BallsLoadingView.m in Sources */,
 				E92522BA261202EF00DC3ECA /* AppDelegate.m in Sources */,
+				E9BADC5B26130EAA007B3589 /* RefreshView.m in Sources */,
 				E92522CB261202F500DC3ECA /* main.m in Sources */,
 				E92522BD261202EF00DC3ECA /* SceneDelegate.m in Sources */,
 			);
