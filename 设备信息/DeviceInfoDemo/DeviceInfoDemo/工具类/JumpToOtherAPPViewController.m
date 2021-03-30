@@ -36,7 +36,7 @@
     // 你的项目ID
     NSString *storeAppID = @"414478124";// 微信的AppID
     
-    // 参数appid指的是你在app在创建后的唯一标识，在iTunes Connect里可以查找到此信息
+    // 参数appid指的是你在app创建后的唯一标识，在iTunes Connect里可以查找到此信息
     NSString *storeAppIDString = [NSString stringWithFormat:@"http://itunes.apple.com/cn/lookup?id=%@",storeAppID];
     NSURL *url = [NSURL URLWithString:storeAppIDString];
     
