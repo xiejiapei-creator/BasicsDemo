@@ -124,7 +124,7 @@
     // 设置起点
     CGContextMoveToPoint(context, 10, 10);
     
-    // 图形上下文、需要要突出点的x和y值、曲线结束点的x和y值
+    // 需要图形上下文中配置要突出点的x和y值以及曲线结束点的x和y值
     CGContextAddQuadCurveToPoint(context, 50, 50, 100, 10);
 
     // 设置颜色
@@ -173,7 +173,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     UIGraphicsPushContext(context);// 压入上下文
     
-    // 画线
+    // 配置线条属性
     CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);// 红线
     CGContextSetLineWidth(context, 5.0);// 线宽
     
@@ -836,3 +836,6 @@
 }
 
 @end
+
+
+
