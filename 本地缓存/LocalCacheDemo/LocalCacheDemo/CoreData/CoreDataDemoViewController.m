@@ -121,7 +121,6 @@
     // 5. 更新里面的值(find-replace)后存储
     if (error == nil && [listData count] > 0)
     {
-        //
         NSManagedObject *obj = listData[0];
         [obj setValue:@"FanYiCheng" forKey:@"name"];
         NSLog(@"更新后的名称为：%@",[obj valueForKey:@"name"]);

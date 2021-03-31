@@ -6,11 +6,8 @@
 //
 
 #import "SandboxViewController.h"
-#import "BookMarkViewController.h"
 
 @interface SandboxViewController ()
-
-@property (nonatomic, strong) BookMarkViewController *bookMarkVC;
 
 @end
 
@@ -19,8 +16,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.bookMarkVC = [[BookMarkViewController alloc] init];
     
     [self getSandBoxPath];
 }
@@ -80,8 +75,6 @@
         for (NSURL *urlItem in arrayURLs)
         {
             NSLog(@"路径为：%@",urlItem.path);
-            NSData *bookmark = [self.bookMarkVC bookmarkForURL:urlItem];
-            NSLog(@"书签为：%@",bookmark);
         }
     }
     else

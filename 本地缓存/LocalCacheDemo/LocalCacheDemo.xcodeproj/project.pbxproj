@@ -20,7 +20,6 @@
 		E9D0DA6B2539AB9300BD24E3 /* luckcoffee.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E9D0DA6A2539AB9300BD24E3 /* luckcoffee.JPG */; };
 		E9D0DA702539AD2400BD24E3 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DA6F2539AD2400BD24E3 /* FileViewController.m */; };
 		E9D0DA76253D2F0F00BD24E3 /* SandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DA75253D2F0F00BD24E3 /* SandboxViewController.m */; };
-		E9D0DA7C253D35F700BD24E3 /* BookMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DA7B253D35F700BD24E3 /* BookMarkViewController.m */; };
 		E9D0DA83253D8BD100BD24E3 /* PlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DA82253D8BD100BD24E3 /* PlistViewController.m */; };
 		E9D0DA8B253D8C3600BD24E3 /* LuckCoffee.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9D0DA8A253D8C3600BD24E3 /* LuckCoffee.plist */; };
 		E9D0DAF0253FCB0F00BD24E3 /* SQLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DAEF253FCB0F00BD24E3 /* SQLiteViewController.m */; };
@@ -50,8 +49,6 @@
 		E9D0DA6F2539AD2400BD24E3 /* FileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
 		E9D0DA74253D2F0F00BD24E3 /* SandboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxViewController.h; sourceTree = "<group>"; };
 		E9D0DA75253D2F0F00BD24E3 /* SandboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandboxViewController.m; sourceTree = "<group>"; };
-		E9D0DA7A253D35F700BD24E3 /* BookMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookMarkViewController.h; sourceTree = "<group>"; };
-		E9D0DA7B253D35F700BD24E3 /* BookMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookMarkViewController.m; sourceTree = "<group>"; };
 		E9D0DA81253D8BD100BD24E3 /* PlistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistViewController.h; sourceTree = "<group>"; };
 		E9D0DA82253D8BD100BD24E3 /* PlistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistViewController.m; sourceTree = "<group>"; };
 		E9D0DA8A253D8C3600BD24E3 /* LuckCoffee.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LuckCoffee.plist; sourceTree = "<group>"; };
@@ -111,7 +108,6 @@
 				E9B2ED11254ACBFF00A5D2BD /* CoreData */,
 				E9D0DAED253FCAFA00BD24E3 /* SQLite */,
 				E9D0DA80253D8BC100BD24E3 /* Plist */,
-				E9D0DA79253D35DF00BD24E3 /* 书签 */,
 				E9D0DA73253D2EFD00BD24E3 /* 沙盒 */,
 				E9D0DA6D2539AD0E00BD24E3 /* NSFileManager和NSFileHandle */,
 				E9D0DA642539AAC700BD24E3 /* UserDefault */,
@@ -180,15 +176,6 @@
 				E9D0DA75253D2F0F00BD24E3 /* SandboxViewController.m */,
 			);
 			path = "沙盒";
-			sourceTree = "<group>";
-		};
-		E9D0DA79253D35DF00BD24E3 /* 书签 */ = {
-			isa = PBXGroup;
-			children = (
-				E9D0DA7A253D35F700BD24E3 /* BookMarkViewController.h */,
-				E9D0DA7B253D35F700BD24E3 /* BookMarkViewController.m */,
-			);
-			path = "书签";
 			sourceTree = "<group>";
 		};
 		E9D0DA80253D8BC100BD24E3 /* Plist */ = {
@@ -281,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D0DA7C253D35F700BD24E3 /* BookMarkViewController.m in Sources */,
 				E9D0DA702539AD2400BD24E3 /* FileViewController.m in Sources */,
 				E9B2ED0F254AC76E00A5D2BD /* CoreDataModel.xcdatamodeld in Sources */,
 				E9D0DA3C2539958600BD24E3 /* AppDelegate.m in Sources */,
