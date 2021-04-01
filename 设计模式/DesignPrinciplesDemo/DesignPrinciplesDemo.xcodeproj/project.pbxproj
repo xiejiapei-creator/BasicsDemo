@@ -23,11 +23,7 @@
 		E90335B824F6506900727CCE /* Adaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335A624F6506900727CCE /* Adaper.swift */; };
 		E90335B924F6506900727CCE /* Bridage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335A724F6506900727CCE /* Bridage.swift */; };
 		E90335BA24F6506900727CCE /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335A824F6506900727CCE /* Appearance.swift */; };
-		E90335BB24F6506900727CCE /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335AA24F6506900727CCE /* Visitor.swift */; };
 		E90335BC24F6506900727CCE /* DutyHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335AB24F6506900727CCE /* DutyHandle.swift */; };
-		E90335BD24F6506900727CCE /* Explain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335AC24F6506900727CCE /* Explain.swift */; };
-		E90335BE24F6506900727CCE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335AD24F6506900727CCE /* State.swift */; };
-		E90335BF24F6506900727CCE /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335AE24F6506900727CCE /* Template.swift */; };
 		E90335C024F6506900727CCE /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335AF24F6506900727CCE /* Strategy.swift */; };
 		E90335C124F6506900727CCE /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335B024F6506900727CCE /* Iterator.swift */; };
 		E90335C324F6507200727CCE /* DesignPrinciplesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90335C224F6507200727CCE /* DesignPrinciplesDemo.swift */; };
@@ -52,11 +48,7 @@
 		E90335A624F6506900727CCE /* Adaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adaper.swift; sourceTree = "<group>"; };
 		E90335A724F6506900727CCE /* Bridage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bridage.swift; sourceTree = "<group>"; };
 		E90335A824F6506900727CCE /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
-		E90335AA24F6506900727CCE /* Visitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		E90335AB24F6506900727CCE /* DutyHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DutyHandle.swift; sourceTree = "<group>"; };
-		E90335AC24F6506900727CCE /* Explain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Explain.swift; sourceTree = "<group>"; };
-		E90335AD24F6506900727CCE /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		E90335AE24F6506900727CCE /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		E90335AF24F6506900727CCE /* Strategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 		E90335B024F6506900727CCE /* Iterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		E90335C224F6507200727CCE /* DesignPrinciplesDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignPrinciplesDemo.swift; sourceTree = "<group>"; };
@@ -142,11 +134,7 @@
 		E90335A924F6506900727CCE /* 行为型模式 */ = {
 			isa = PBXGroup;
 			children = (
-				E90335AA24F6506900727CCE /* Visitor.swift */,
 				E90335AB24F6506900727CCE /* DutyHandle.swift */,
-				E90335AC24F6506900727CCE /* Explain.swift */,
-				E90335AD24F6506900727CCE /* State.swift */,
-				E90335AE24F6506900727CCE /* Template.swift */,
 				E90335AF24F6506900727CCE /* Strategy.swift */,
 				E90335B024F6506900727CCE /* Iterator.swift */,
 			);
@@ -228,20 +216,16 @@
 				E90335B124F6506900727CCE /* Singleton.swift in Sources */,
 				E90335B324F6506900727CCE /* Prototype.swift in Sources */,
 				E90335C124F6506900727CCE /* Iterator.swift in Sources */,
-				E90335BF24F6506900727CCE /* Template.swift in Sources */,
 				E903358924F6503900727CCE /* AppDelegate.swift in Sources */,
 				E90335BA24F6506900727CCE /* Appearance.swift in Sources */,
 				E90335B624F6506900727CCE /* Composite.swift in Sources */,
-				E90335BB24F6506900727CCE /* Visitor.swift in Sources */,
 				E903358B24F6503900727CCE /* SceneDelegate.swift in Sources */,
 				E90335C024F6506900727CCE /* Strategy.swift in Sources */,
 				E90335C324F6507200727CCE /* DesignPrinciplesDemo.swift in Sources */,
 				E90335B924F6506900727CCE /* Bridage.swift in Sources */,
-				E90335BD24F6506900727CCE /* Explain.swift in Sources */,
 				E90335BC24F6506900727CCE /* DutyHandle.swift in Sources */,
 				E90335B724F6506900727CCE /* Delegate.swift in Sources */,
 				E90335B224F6506900727CCE /* Builder.swift in Sources */,
-				E90335BE24F6506900727CCE /* State.swift in Sources */,
 				E90335B824F6506900727CCE /* Adaper.swift in Sources */,
 				E90335B424F6506900727CCE /* AbstractFactory.swift in Sources */,
 				E90335B524F6506900727CCE /* FactoryMethod.swift in Sources */,

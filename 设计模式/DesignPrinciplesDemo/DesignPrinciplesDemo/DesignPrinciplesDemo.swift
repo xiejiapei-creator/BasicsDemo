@@ -216,7 +216,7 @@ class Gasoline93: Gasoline
 
 //MARK: 迪米特法则
 
-class Person //给车加油的人
+class Person //车主
 {
     var car: GasolineCar?
     
