@@ -193,7 +193,7 @@
     
     maskLayerTop.strokeColor = [UIColor grayColor].CGColor;
     maskLayerTop.lineWidth = 10.0;
-    // X、Y坐标起作用了，但是宽度和高度设置何值好像都影响
+    // X、Y坐标起作用了，但是宽度和高度设置何值好像都没影响
     maskLayerTop.frame = CGRectMake(0, 125, 500, 10);
 
     [self.view.layer addSublayer:maskLayerTop];
@@ -222,7 +222,7 @@
     maskLayer.fillColor = [UIColor clearColor].CGColor;
     maskLayer.strokeColor = [UIColor colorWithRed:88/255.0 green:185/255.0 blue:157/255.0 alpha:1].CGColor;
     
-    // X、Y坐标起作用了，但是宽度和高度设置何值好像都影响
+    // X、Y坐标起作用了，但是宽度和高度设置何值好像都没影响
     maskLayer.frame = CGRectMake(90, 60, 500, 500);
     
     [self.view.layer addSublayer:maskLayer];
@@ -300,3 +300,7 @@
 }
 
 @end
+
+
+
+

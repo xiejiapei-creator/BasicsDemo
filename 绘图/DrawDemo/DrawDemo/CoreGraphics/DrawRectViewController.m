@@ -124,7 +124,7 @@
     // 设置起点
     CGContextMoveToPoint(context, 10, 10);
     
-    // 图形上下文、需要要突出点的x和y值、曲线结束点的x和y值
+    // 需要在图形上下文中配置要突出点的x和y值以及曲线结束点的x和y值
     CGContextAddQuadCurveToPoint(context, 50, 50, 100, 10);
 
     // 设置颜色
@@ -148,7 +148,7 @@
     CGContextSetLineWidth(context, 10);// 点的高度
     CGContextSetStrokeColorWithColor(context, lineColor.CGColor);// 红线
     CGFloat lengths[] = {3, 2};// 表示先绘制3个点，再跳过2个点，如此反复
-    // phase参数表示在第一个虚线绘制的时候跳过多少个点，这里为0
+    // phase参数表示在第一个虚线绘制的时候跳过多少个点，这里为10
     CGContextSetLineDash(context, 10, lengths, 2);// 2表示lengths数组的长度
     
     // 绘制线
@@ -173,7 +173,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     UIGraphicsPushContext(context);// 压入上下文
     
-    // 画线
+    // 配置线条属性
     CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);// 红线
     CGContextSetLineWidth(context, 5.0);// 线宽
     
@@ -836,3 +836,9 @@
 }
 
 @end
+
+
+
+
+
+

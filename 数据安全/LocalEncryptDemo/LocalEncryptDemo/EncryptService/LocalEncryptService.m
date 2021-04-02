@@ -182,7 +182,7 @@ static NSString *AESPriPerfix = @"AES";
         }
         else
         {
-            salt = @"xjnkk";
+            salt = @"xjpjm";
         }
         key = [key stringByAppendingString:salt];
         
