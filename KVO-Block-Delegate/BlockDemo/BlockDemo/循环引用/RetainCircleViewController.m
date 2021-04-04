@@ -97,3 +97,16 @@ typedef void(^CircleBlockVC)(RetainCircleViewController *vc);
 
 @end
 
+
+
+
+__weak __typeof (self)weakSelf = self;
+
+_observer = [[NSNotificationCenter defaultCenter] addObserverForName:@"Change" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+    
+    __strong __typeof(weakSelf)strongSelf = weakSelf;
+    if (strongSelf)
+    {
+        [strongSelf reload];
+    }
+}

@@ -204,3 +204,11 @@ static NSString *getterForSetter(NSString *setter)
 }
 
 @end
+
+
+
+// 删除已经注册的通知
+
+
+
+

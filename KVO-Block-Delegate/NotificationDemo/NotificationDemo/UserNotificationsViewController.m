@@ -30,7 +30,7 @@
     //50s后提醒
     UNTimeIntervalNotificationTrigger *timeTrigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:10 repeats:NO];
     
-    //在每周一的14点3分提醒
+    //在每周一的4点3分提醒
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.weekday = 2;
     components.hour = 16;
