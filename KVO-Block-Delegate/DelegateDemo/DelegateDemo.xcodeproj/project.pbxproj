@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E93988E9261994DF00632D95 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93988E7261994DF00632D95 /* FirstViewController.m */; };
+		E93988EA261994DF00632D95 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93988E8261994DF00632D95 /* SecondViewController.m */; };
 		E9D0DAA4253E874B00BD24E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DAA3253E874B00BD24E3 /* AppDelegate.m */; };
 		E9D0DAAF253E874C00BD24E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D0DAAE253E874C00BD24E3 /* Assets.xcassets */; };
 		E9D0DAB2253E874C00BD24E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D0DAB0253E874C00BD24E3 /* LaunchScreen.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E93988E5261994DF00632D95 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		E93988E6261994DF00632D95 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E93988E7261994DF00632D95 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		E93988E8261994DF00632D95 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E9D0DA9F253E874B00BD24E3 /* DelegateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D0DAA2253E874B00BD24E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9D0DAA3253E874B00BD24E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E93988E4261994DF00632D95 /* 界面传值 */ = {
+			isa = PBXGroup;
+			children = (
+				E93988E5261994DF00632D95 /* FirstViewController.h */,
+				E93988E6261994DF00632D95 /* SecondViewController.h */,
+				E93988E7261994DF00632D95 /* FirstViewController.m */,
+				E93988E8261994DF00632D95 /* SecondViewController.m */,
+			);
+			path = "界面传值";
+			sourceTree = "<group>";
+		};
 		E9D0DA96253E874B00BD24E3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +73,7 @@
 		E9D0DAA1253E874B00BD24E3 /* DelegateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E93988E4261994DF00632D95 /* 界面传值 */,
 				E9D0DAC0253E87D500BD24E3 /* 基本使用 */,
 				E9D0DABD253E875B00BD24E3 /* Demo */,
 				E9D0DAB3253E874C00BD24E3 /* Info.plist */,
@@ -152,9 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93988EA261994DF00632D95 /* SecondViewController.m in Sources */,
 				E9D0DAA4253E874B00BD24E3 /* AppDelegate.m in Sources */,
 				E9D0DAB5253E874C00BD24E3 /* main.m in Sources */,
 				E9D0DAC3253E87EB00BD24E3 /* BaseUseViewController.m in Sources */,
+				E93988E9261994DF00632D95 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
