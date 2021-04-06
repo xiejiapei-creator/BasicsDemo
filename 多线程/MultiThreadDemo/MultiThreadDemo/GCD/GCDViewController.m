@@ -20,6 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self runMaxThreadCountWithGCD];
 }
 
 // 串行同步
@@ -457,5 +459,4 @@
 }
 
 @end
-
 

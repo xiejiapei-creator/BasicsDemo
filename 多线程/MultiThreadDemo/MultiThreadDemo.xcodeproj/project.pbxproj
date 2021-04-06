@@ -17,6 +17,7 @@
 		E9A1549225E4A27A00128708 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9A1548825E4A27A00128708 /* 3.jpg */; };
 		E9A1549325E4A27A00128708 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9A1548925E4A27A00128708 /* 1.jpg */; };
 		E9A1549425E4A27A00128708 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9A1548A25E4A27A00128708 /* 0.jpg */; };
+		E9BADC77261C5793007B3589 /* MultithreadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BADC75261C5793007B3589 /* MultithreadingViewController.m */; };
 		E9E39F5024EB9E8A00654AE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E39F4F24EB9E8A00654AE1 /* AppDelegate.m */; };
 		E9E39F5B24EB9E8C00654AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E39F5A24EB9E8C00654AE1 /* Assets.xcassets */; };
 		E9E39F5E24EB9E8C00654AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E39F5C24EB9E8C00654AE1 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,8 @@
 		E9A1548825E4A27A00128708 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		E9A1548925E4A27A00128708 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		E9A1548A25E4A27A00128708 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		E9BADC75261C5793007B3589 /* MultithreadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultithreadingViewController.m; sourceTree = "<group>"; };
+		E9BADC76261C5793007B3589 /* MultithreadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultithreadingViewController.h; sourceTree = "<group>"; };
 		E9E39F4B24EB9E8A00654AE1 /* MultiThreadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiThreadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E39F4E24EB9E8A00654AE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9E39F4F24EB9E8A00654AE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +83,15 @@
 			path = "图片";
 			sourceTree = "<group>";
 		};
+		E9BADC74261C5786007B3589 /* 面试题 */ = {
+			isa = PBXGroup;
+			children = (
+				E9BADC76261C5793007B3589 /* MultithreadingViewController.h */,
+				E9BADC75261C5793007B3589 /* MultithreadingViewController.m */,
+			);
+			path = "面试题";
+			sourceTree = "<group>";
+		};
 		E9E39F4224EB9E8A00654AE1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +111,7 @@
 		E9E39F4D24EB9E8A00654AE1 /* MultiThreadDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9BADC74261C5786007B3589 /* 面试题 */,
 				E9E39F7024EBD47F00654AE1 /* NSOperation */,
 				E9E39F6C24EBAEF200654AE1 /* GCD */,
 				E9E39F6824EB9EE000654AE1 /* NSThread */,
@@ -232,6 +245,7 @@
 				E9E39F6B24EB9F1200654AE1 /* NSThreadViewController.m in Sources */,
 				E9E39F6124EB9E8C00654AE1 /* main.m in Sources */,
 				E9E39F6F24EBAF0B00654AE1 /* GCDViewController.m in Sources */,
+				E9BADC77261C5793007B3589 /* MultithreadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

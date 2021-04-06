@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
     
-    [self addDependency];
+    [self addOperationToQueue];
 }
  
 // 使用子类 NSInvocationOperation
@@ -338,5 +338,6 @@
 
 
 @end
+
 
 

@@ -2,8 +2,7 @@
 //  AppDelegate.h
 //  LockDemo
 //
-//  Created by 谢佳培 on 2020/8/5.
-//  Copyright © 2020 xiejiapei. All rights reserved.
+//  Created by 谢佳培 on 2021/4/6.
 //
 
 #import <UIKit/UIKit.h>

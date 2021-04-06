@@ -48,12 +48,13 @@
 // 其他演示
 - (void)otherTest
 {
-    // 第一次进来直接加锁，第二次进来，已经加锁了，还能递归继续加锁
+    // 第一次进来直接加锁，第二次进来已经加锁了，还能递归继续加锁
     pthread_mutex_lock(&_MutexLock);
     NSLog(@"加锁 %s",__func__);
     
     static int count = 0;
-    if (count < 5) {
+    if (count < 5)
+    {
         count++;
         NSLog(@"count:%d", count);
         [self otherTest];

@@ -1,12 +1,11 @@
 //
-//  RootViewController.m
-//  多线程Demo
+//  ViewController.m
+//  LockDemo
 //
-//  Created by 谢佳培 on 2020/7/16.
-//  Copyright © 2020 xiejiapei. All rights reserved.
+//  Created by 谢佳培 on 2021/4/6.
 //
 
-#import "RootViewController.h"
+#import "ViewController.h"
 #import "BaseLock.h"
 #import "OSSpinLockDemo.h"
 #import "os_unfair_lockDemo.h"
@@ -23,11 +22,11 @@
 #import "dispatch_barrier_asyncDemo.h"
 #import "dispatch_group_tDemo.h"
 
-@interface RootViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation RootViewController
+@implementation ViewController
 
 - (void)viewDidLoad
 {

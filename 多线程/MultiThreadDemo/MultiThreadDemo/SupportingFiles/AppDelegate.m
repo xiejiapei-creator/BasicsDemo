@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    GCDViewController *rootVC = [[GCDViewController alloc] init];
+    NSOperationViewController *rootVC = [[NSOperationViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

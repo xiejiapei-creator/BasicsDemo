@@ -2,12 +2,10 @@
 //  AppDelegate.m
 //  LockDemo
 //
-//  Created by 谢佳培 on 2020/8/5.
-//  Copyright © 2020 xiejiapei. All rights reserved.
+//  Created by 谢佳培 on 2021/4/6.
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +13,9 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     RootViewController *rootVC = [[RootViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
@@ -27,6 +26,5 @@
     
     return YES;
 }
-
 
 @end
