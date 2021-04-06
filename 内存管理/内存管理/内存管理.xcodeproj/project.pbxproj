@@ -14,12 +14,6 @@
 		E9995F2A25EE72BA002B7B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9995F2925EE72BA002B7B68 /* Assets.xcassets */; };
 		E9995F2D25EE72BA002B7B68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9995F2B25EE72BA002B7B68 /* LaunchScreen.storyboard */; };
 		E9995F3025EE72BA002B7B68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9995F2F25EE72BA002B7B68 /* main.m */; };
-		E9995F3A25EE7726002B7B68 /* RetainCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9995F3925EE7726002B7B68 /* RetainCircleViewController.m */; };
-		E9ED5B4E25EF5A7F0066757E /* StrongRetainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED5B4D25EF5A7F0066757E /* StrongRetainViewController.m */; };
-		E9ED5B5825EF66CF0066757E /* NSObject+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED5B5725EF66CF0066757E /* NSObject+Custom.m */; };
-		E9ED5B5F25EF68D90066757E /* TimerWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED5B5E25EF68D90066757E /* TimerWapper.m */; };
-		E9ED5B6425EF71680066757E /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED5B6325EF71680066757E /* Proxy.m */; };
-		E9ED5B7425EF7B850066757E /* CycleRefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ED5B7325EF7B850066757E /* CycleRefViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,18 +29,6 @@
 		E9995F2C25EE72BA002B7B68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9995F2E25EE72BA002B7B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9995F2F25EE72BA002B7B68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E9995F3825EE7726002B7B68 /* RetainCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetainCircleViewController.h; sourceTree = "<group>"; };
-		E9995F3925EE7726002B7B68 /* RetainCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCircleViewController.m; sourceTree = "<group>"; };
-		E9ED5B4C25EF5A7F0066757E /* StrongRetainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrongRetainViewController.h; sourceTree = "<group>"; };
-		E9ED5B4D25EF5A7F0066757E /* StrongRetainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrongRetainViewController.m; sourceTree = "<group>"; };
-		E9ED5B5625EF66CF0066757E /* NSObject+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Custom.h"; sourceTree = "<group>"; };
-		E9ED5B5725EF66CF0066757E /* NSObject+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Custom.m"; sourceTree = "<group>"; };
-		E9ED5B5D25EF68D90066757E /* TimerWapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerWapper.h; sourceTree = "<group>"; };
-		E9ED5B5E25EF68D90066757E /* TimerWapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerWapper.m; sourceTree = "<group>"; };
-		E9ED5B6225EF71680066757E /* Proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
-		E9ED5B6325EF71680066757E /* Proxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
-		E9ED5B7225EF7B850066757E /* CycleRefViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleRefViewController.h; sourceTree = "<group>"; };
-		E9ED5B7325EF7B850066757E /* CycleRefViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleRefViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +61,8 @@
 		E9995F1C25EE72B5002B7B68 /* 内存管理 */ = {
 			isa = PBXGroup;
 			children = (
-				E9ED5B6C25EF7A660066757E /* 内存检测 */,
-				E9ED5B5C25EF67BB0066757E /* Help */,
-				E9ED5B5B25EF671A0066757E /* VC */,
+				E9995F2325EE72B5002B7B68 /* ViewController.h */,
+				E9995F2425EE72B5002B7B68 /* ViewController.m */,
 				E9995F2F25EE72BA002B7B68 /* main.m */,
 				E9ED5B4225EF32FF0066757E /* SupportingFiles */,
 				E9995F2E25EE72BA002B7B68 /* Info.plist */,
@@ -101,41 +82,6 @@
 				E9995F2B25EE72BA002B7B68 /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		E9ED5B5B25EF671A0066757E /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				E9995F2325EE72B5002B7B68 /* ViewController.h */,
-				E9995F2425EE72B5002B7B68 /* ViewController.m */,
-				E9995F3825EE7726002B7B68 /* RetainCircleViewController.h */,
-				E9995F3925EE7726002B7B68 /* RetainCircleViewController.m */,
-				E9ED5B4C25EF5A7F0066757E /* StrongRetainViewController.h */,
-				E9ED5B4D25EF5A7F0066757E /* StrongRetainViewController.m */,
-				E9ED5B7225EF7B850066757E /* CycleRefViewController.h */,
-				E9ED5B7325EF7B850066757E /* CycleRefViewController.m */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		E9ED5B5C25EF67BB0066757E /* Help */ = {
-			isa = PBXGroup;
-			children = (
-				E9ED5B5625EF66CF0066757E /* NSObject+Custom.h */,
-				E9ED5B5725EF66CF0066757E /* NSObject+Custom.m */,
-				E9ED5B5D25EF68D90066757E /* TimerWapper.h */,
-				E9ED5B5E25EF68D90066757E /* TimerWapper.m */,
-				E9ED5B6225EF71680066757E /* Proxy.h */,
-				E9ED5B6325EF71680066757E /* Proxy.m */,
-			);
-			path = Help;
-			sourceTree = "<group>";
-		};
-		E9ED5B6C25EF7A660066757E /* 内存检测 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "内存检测";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,16 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9ED5B5F25EF68D90066757E /* TimerWapper.m in Sources */,
-				E9995F3A25EE7726002B7B68 /* RetainCircleViewController.m in Sources */,
 				E9995F2525EE72B5002B7B68 /* ViewController.m in Sources */,
-				E9ED5B5825EF66CF0066757E /* NSObject+Custom.m in Sources */,
-				E9ED5B4E25EF5A7F0066757E /* StrongRetainViewController.m in Sources */,
 				E9995F1F25EE72B5002B7B68 /* AppDelegate.m in Sources */,
-				E9ED5B6425EF71680066757E /* Proxy.m in Sources */,
 				E9995F3025EE72BA002B7B68 /* main.m in Sources */,
 				E9995F2225EE72B5002B7B68 /* SceneDelegate.m in Sources */,
-				E9ED5B7425EF7B850066757E /* CycleRefViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

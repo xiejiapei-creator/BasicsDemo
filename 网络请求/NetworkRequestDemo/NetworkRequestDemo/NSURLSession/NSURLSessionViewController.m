@@ -33,8 +33,6 @@
 - (void)startGetRequest
 {
     //1、指定请求的 URL
-    //请求的参数全部暴露在 URL后面，这是 GET请求方法的典型特征
-    //注册用户邮箱  type：数据交互类型（JSON 、 XML和 SOAP） action：add、 remove、 modify和query）
     NSString *strURL = [[NSString alloc] initWithFormat:@"http://www.51work6.com/service/mynotes/WebServic.php?email=%@&type%@&action=%@",@"<你的51work6.com用户邮箱>","JSON",@"query"];
     //URL字符串允许的字符集
     strURL = [strURL stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
@@ -43,9 +41,8 @@
 
     //2、构造网络请求对象 NSURLRequest
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-    //3、创建简单会话对象
-    NSURLSession *session = [NSURLSession sharedSession];
-    //创建默认配置对象
+    
+    //3、创建默认配置对象
     NSURLSessionConfiguration *defaultConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
     //设置缓存策略
     defaultConfig.requestCachePolicy = NSURLRequestUseProtocolCachePolicy;
@@ -58,34 +55,30 @@
     //网络属性  是否使用移动流量
     defaultConfig.allowsCellularAccess = YES;
     
-    //3、创建默认会话对象
-    //本例网络请求任务之后回调的是代码块，而非委托对象的方法，delegate参数被赋值为 nil
-    //delegateQueue参数是设置会话任务执行所在的操作队列，NSOperationQueue是操作队列， 内部封装了线程
-    //由于会话任务是在主线程中执行不需要再放到并发队列方法dispatch_async
+    //创建简单会话对象
+    //NSURLSession *session = [NSURLSession sharedSession];
+    //4、创建默认会话对象
     NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:defaultConfig delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
 
-    /* 4、数据任务 (NSURLSessionDataTask) 对象
-     * 第一个参数是NSURLRequest请求对象
-     * 第二个参数completionHandler是请求完成回调的代码块
-     * data参数是从服务器返回的数据
-     * response是从服务器返回的应答对象
-     * error是错误对象，如果 error为 nil， 则说明请求过程没有错误发生
-     */
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    //5、数据任务 (NSURLSessionDataTask) 对象
+    NSURLSessionDataTask *task = [defaultSession dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSLog(@"请求完成...");
        
         //将响应对象转化为NSHTTPURLResponse对象
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+        
         //获取网络连接的状态码，200成功  404网页未找到
         NSLog(@"状态码:%li", httpResponse.statusCode);
-        if (httpResponse.statusCode == 200) {
+        if (httpResponse.statusCode == 200)
+        {
             NSLog(@"请求成功");
         }
         //获取响应头
         NSLog(@"响应头:%@", httpResponse.allHeaderFields);
         
         //获取响应体
-        if (!error) {
+        if (!error)
+        {
             NSDictionary *resDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
             //调用 reloadView: 方法是在 GCD主队列中执行的
             //简单会话是在非主队列中执行的，当遇到表视图刷新这种更新 UI界面的操作时，要切换回主队列执行
@@ -93,11 +86,14 @@
                 //在请求完成时调用 reloadView:方法，该方法用千重新加载表视图中的数据
                 [self reloadView:resDict];
             });
-        } else {
+        }
+        else
+        {
             NSLog(@"error: %@", error.localizedDescription);
         }
     }];
-    //5、在会话任务对象上调用 resume方法开始执行任务，新创建的任务默认情况下是暂停的
+    
+    //6、在会话任务对象上调用 resume方法开始执行任务，新创建的任务默认情况下是暂停的
     [task resume];
 }
 
@@ -217,7 +213,6 @@ didReceiveResponse:(NSURLResponse *)response
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
         NSLog(@"%@", dic);
     }];
-    
     [dataTask resume];
 }
 
@@ -490,4 +485,6 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
 }
 
 @end
+
+
 

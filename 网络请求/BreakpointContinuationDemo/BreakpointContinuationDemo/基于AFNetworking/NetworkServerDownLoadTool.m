@@ -156,6 +156,7 @@ static NetworkServerDownLoadTool* tool = nil;
 {
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlHost]];
     NSURLSessionDownloadTask *downloadTask = nil;
+    
     // 取出之前下载好的部分
     NSData *downLoadHistoryData = [self.downLoadHistoryDictionary objectForKey:urlHost];
     NSLog(@"之前下载好的部分数据长度为 %ld",downLoadHistoryData.length);
@@ -284,3 +285,4 @@ static NetworkServerDownLoadTool* tool = nil;
 }
 
 @end
+

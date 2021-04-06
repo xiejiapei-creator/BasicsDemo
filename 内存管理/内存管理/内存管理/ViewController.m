@@ -86,11 +86,11 @@ static NSString *staticNSString;
     NSNumber *number4 = @(doubleNumber);
     NSNumber *numberFFFF = @(0xFFFF);
 
-    NSLog(@"number1 pointer is %p", number0);
+    NSLog(@"number0 pointer is %p", number0);
     NSLog(@"number1 pointer is %p", number1);
     NSLog(@"number2 pointer is %p", number2);
     NSLog(@"number3 pointer is %p", number3);
-    NSLog(@"number3 pointer is %p", number4);
+    NSLog(@"number4 pointer is %p", number4);
     NSLog(@"numberffff pointer is %p", numberFFFF);
 }
 
@@ -111,7 +111,7 @@ static NSString *staticNSString;
 {
     for (int i = 0; i<100000; i++) {
         dispatch_async(self.queue, ^{
-            // 文字太长不符合taggedPointer的存储标准，采用其他方式存储，生成100000个临时变量超负荷故未崩溃
+            // 文字太长不符合taggedPointer的存储标准，采用其他方式存储，生成100000个临时变量超负荷故崩溃
             self.nameStr = [NSString stringWithFormat:@"dsggkdashjksda"];
         });
     }

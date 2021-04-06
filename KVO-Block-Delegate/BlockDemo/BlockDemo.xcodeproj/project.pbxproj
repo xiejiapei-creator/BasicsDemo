@@ -12,6 +12,11 @@
 		E9161932253979F900EC44F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9161930253979F900EC44F0 /* LaunchScreen.storyboard */; };
 		E9161935253979F900EC44F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9161934253979F900EC44F0 /* main.m */; };
 		E916194125397A7D00EC44F0 /* BasicUseBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E916194025397A7D00EC44F0 /* BasicUseBlockViewController.m */; };
+		E939888A261745F200632D95 /* RetainCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9398888261745F200632D95 /* RetainCircleViewController.m */; };
+		E93988942617462500632D95 /* StrongRetainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E93988922617462500632D95 /* StrongRetainViewController.m */; };
+		E93988AE261746B300632D95 /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E93988AC261746B300632D95 /* Proxy.m */; };
+		E93988B2261746C000632D95 /* TimerWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E93988B1261746C000632D95 /* TimerWapper.m */; };
+		E93988B6261746D000632D95 /* NSObject+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = E93988B5261746D000632D95 /* NSObject+Custom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,16 @@
 		E9161934253979F900EC44F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E916193F25397A7D00EC44F0 /* BasicUseBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicUseBlockViewController.h; sourceTree = "<group>"; };
 		E916194025397A7D00EC44F0 /* BasicUseBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicUseBlockViewController.m; sourceTree = "<group>"; };
+		E9398888261745F200632D95 /* RetainCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainCircleViewController.m; sourceTree = "<group>"; };
+		E9398889261745F200632D95 /* RetainCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCircleViewController.h; sourceTree = "<group>"; };
+		E93988922617462500632D95 /* StrongRetainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrongRetainViewController.m; sourceTree = "<group>"; };
+		E93988932617462500632D95 /* StrongRetainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrongRetainViewController.h; sourceTree = "<group>"; };
+		E93988AC261746B300632D95 /* Proxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
+		E93988AD261746B300632D95 /* Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
+		E93988B0261746C000632D95 /* TimerWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerWapper.h; sourceTree = "<group>"; };
+		E93988B1261746C000632D95 /* TimerWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerWapper.m; sourceTree = "<group>"; };
+		E93988B4261746D000632D95 /* NSObject+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Custom.h"; sourceTree = "<group>"; };
+		E93988B5261746D000632D95 /* NSObject+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Custom.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,9 @@
 		E9161921253979F800EC44F0 /* BlockDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E93988972617466E00632D95 /* Help */,
+				E939888C2617460000632D95 /* 强引用 */,
+				E9398882261745A800632D95 /* 循环引用 */,
 				E916193E25397A6500EC44F0 /* 基本使用 */,
 				E916193D25397A3300EC44F0 /* SupportingFiles */,
 				E9161933253979F900EC44F0 /* Info.plist */,
@@ -82,6 +100,38 @@
 				E916194025397A7D00EC44F0 /* BasicUseBlockViewController.m */,
 			);
 			path = "基本使用";
+			sourceTree = "<group>";
+		};
+		E9398882261745A800632D95 /* 循环引用 */ = {
+			isa = PBXGroup;
+			children = (
+				E9398889261745F200632D95 /* RetainCircleViewController.h */,
+				E9398888261745F200632D95 /* RetainCircleViewController.m */,
+			);
+			path = "循环引用";
+			sourceTree = "<group>";
+		};
+		E939888C2617460000632D95 /* 强引用 */ = {
+			isa = PBXGroup;
+			children = (
+				E93988932617462500632D95 /* StrongRetainViewController.h */,
+				E93988922617462500632D95 /* StrongRetainViewController.m */,
+			);
+			path = "强引用";
+			sourceTree = "<group>";
+		};
+		E93988972617466E00632D95 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				E93988B4261746D000632D95 /* NSObject+Custom.h */,
+				E93988B5261746D000632D95 /* NSObject+Custom.m */,
+				E93988B0261746C000632D95 /* TimerWapper.h */,
+				E93988B1261746C000632D95 /* TimerWapper.m */,
+				E93988AD261746B300632D95 /* Proxy.h */,
+				E93988AC261746B300632D95 /* Proxy.m */,
+			);
+			name = Help;
+			path = "../../../内存管理/内存管理/内存管理/Help";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93988AE261746B300632D95 /* Proxy.m in Sources */,
 				E916194125397A7D00EC44F0 /* BasicUseBlockViewController.m in Sources */,
+				E93988B6261746D000632D95 /* NSObject+Custom.m in Sources */,
+				E93988942617462500632D95 /* StrongRetainViewController.m in Sources */,
+				E93988B2261746C000632D95 /* TimerWapper.m in Sources */,
 				E9161924253979F800EC44F0 /* AppDelegate.m in Sources */,
 				E9161935253979F900EC44F0 /* main.m in Sources */,
+				E939888A261745F200632D95 /* RetainCircleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

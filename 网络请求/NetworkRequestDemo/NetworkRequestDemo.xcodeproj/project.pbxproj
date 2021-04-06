@@ -17,7 +17,6 @@
 		E9E39FED24EF9F4500654AE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E39FEC24EF9F4500654AE1 /* main.m */; };
 		E9E39FF724EF9FEE00654AE1 /* NSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E39FF624EF9FEE00654AE1 /* NSURLSessionViewController.m */; };
 		E9E39FFB24EFBCA600654AE1 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E39FFA24EFBCA600654AE1 /* AFNetworkingViewController.m */; };
-		E9E3A00224F3557000654AE1 /* NSURLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3A00124F3557000654AE1 /* NSURLConnectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +40,6 @@
 		E9E39FF624EF9FEE00654AE1 /* NSURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionViewController.m; sourceTree = "<group>"; };
 		E9E39FF924EFBCA600654AE1 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
 		E9E39FFA24EFBCA600654AE1 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
-		E9E3A00024F3557000654AE1 /* NSURLConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionViewController.h; sourceTree = "<group>"; };
-		E9E3A00124F3557000654AE1 /* NSURLConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +69,6 @@
 				636562C260041D75FA787828 /* libPods-NetworkRequestDemo.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E95A8342254043F700B34438 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				E95A83442540447600B34438 /* TopicViewController.h */,
-				E95A83452540447600B34438 /* TopicViewController.m */,
-			);
-			path = Demo;
 			sourceTree = "<group>";
 		};
 		E9A1544E25E39FF600128708 /* 文件流下载 */ = {
@@ -116,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				E9A1544E25E39FF600128708 /* 文件流下载 */,
-				E9E39FFC24EFD56600654AE1 /* NSURLConnection */,
 				E9E39FF824EFBC8F00654AE1 /* AFNetworking */,
 				E9E39FF424EF9FB600654AE1 /* NSURLSession */,
 				E9E39FF324EF9FA100654AE1 /* SupportingFiles */,
@@ -140,7 +127,8 @@
 		E9E39FF424EF9FB600654AE1 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				E95A8342254043F700B34438 /* Demo */,
+				E95A83442540447600B34438 /* TopicViewController.h */,
+				E95A83452540447600B34438 /* TopicViewController.m */,
 				E9E39FF524EF9FEE00654AE1 /* NSURLSessionViewController.h */,
 				E9E39FF624EF9FEE00654AE1 /* NSURLSessionViewController.m */,
 			);
@@ -154,15 +142,6 @@
 				E9E39FFA24EFBCA600654AE1 /* AFNetworkingViewController.m */,
 			);
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		E9E39FFC24EFD56600654AE1 /* NSURLConnection */ = {
-			isa = PBXGroup;
-			children = (
-				E9E3A00024F3557000654AE1 /* NSURLConnectionViewController.h */,
-				E9E3A00124F3557000654AE1 /* NSURLConnectionViewController.m */,
-			);
-			path = NSURLConnection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +246,6 @@
 				E9E39FED24EF9F4500654AE1 /* main.m in Sources */,
 				E9E39FF724EF9FEE00654AE1 /* NSURLSessionViewController.m in Sources */,
 				E9A1545125E3A01400128708 /* FileStreamNetworkTool.m in Sources */,
-				E9E3A00224F3557000654AE1 /* NSURLConnectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
