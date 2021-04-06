@@ -58,7 +58,6 @@
         NSLog(@"线程4解锁成功");
         [lock unlockWithCondition:2];
     });
-    
 }
 
 @end
