@@ -11,9 +11,8 @@
 
 @interface DownloadNetworkTool()<NSURLSessionDelegate>
 
-@property (nonatomic) BOOL  isSuspend;
-@property (nonatomic, copy) NSString* fileName;
-@property (nonatomic, strong) NSData *myResumeData;
+@property (nonatomic, strong) NSURLSession* session;
+@property (nonatomic, strong) NSURLSessionDownloadTask* downloadTask;
 
 @end
 
@@ -53,21 +52,13 @@
     [self.downloadTask resume];
     
     // 保存下载进度的另外一种方式：预防下载过程中突然杀掉app需要开启定时器提前保存临时文件
-    [self saveTmpFile];
+    //[self saveTmpFile];
 }
 
 // 暂停下载
 - (void)suspendDownload
 {
-    if (self.isSuspend)
-    {
-        [self.downloadTask resume];
-    }
-    else
-    {
-        [self.downloadTask suspend];
-    }
-    self.isSuspend = !self.isSuspend;
+    [self.downloadTask suspend];
 }
 
 // 暂停并保存下载进度
@@ -160,7 +151,6 @@
     NSFileManager *fileManager = NSFileManager.defaultManager;
     NSData *dowloadData = [fileManager contentsAtPath:[self getTmpFileUrl]];
     self.downloadTask = [self.session downloadTaskWithResumeData:dowloadData];
-    self.resumeData = nil;
 }
 
 // 未下载完的临时文件的url地址
@@ -182,16 +172,13 @@
 // 由于通过计时器提前保存了临时文件，杀掉app后不至于下载的部分文件全部丢失
 - (void)downloadTmpFile
 {
-    if (self.isSuspend)
-    {
-        return;
-    }
-    
     [self.downloadTask cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
-        [resumeData writeToFile:[self getTmpFileUrl] atomically:YES];
-        self.downloadTask = nil;
-        self.downloadTask = [self.session downloadTaskWithResumeData:resumeData];
-        [self.downloadTask resume];
+        if (resumeData != nil) {
+            [resumeData writeToFile:[self getTmpFileUrl] atomically:YES];
+            self.downloadTask = nil;
+            self.downloadTask = [self.session downloadTaskWithResumeData:resumeData];
+            [self.downloadTask resume];
+        }
     }];
 }
 

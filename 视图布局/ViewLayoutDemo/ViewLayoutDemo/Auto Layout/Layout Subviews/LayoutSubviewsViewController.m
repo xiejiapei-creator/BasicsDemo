@@ -6,6 +6,7 @@
 //
 
 #import "LayoutSubviewsViewController.h"
+#import <Masonry.h>
 
 @implementation LayoutHeaderView
 
@@ -84,6 +85,7 @@
 @property (nonatomic, strong) LayoutHeaderView *headerView;
 @property (nonatomic, strong) LayoutBodyView *bodyView;
 @property (nonatomic, strong) LayoutFooterView *footerView;
+@property (nonatomic, strong) UIScrollView *scrollView;
 
 @property (nonatomic, assign) BOOL bodyTextChanged;// 文本是否改变
 
@@ -101,20 +103,21 @@
     [self createSubViews];
 }
 
+
 - (void)createSubViews
 {
     self.headerView = [[LayoutHeaderView alloc] initWithFrame:CGRectMake(0, 164, 320, 100)];
     [self.view addSubview:self.headerView];
-    
+
     self.bodyView = [[LayoutBodyView alloc] initWithFrame:CGRectMake(0, 264, 320, 304)];
     [self.view addSubview:self.bodyView];
-    
+
     self.footerView = [[LayoutFooterView alloc] initWithFrame:CGRectMake(0, 568, 320, 100)];
     [self.view addSubview:self.footerView];
-    
+
     self.bodyView.text = @"嗨，你好呀";
     self.bodyTextChanged = YES;
-    
+
     UIButton *changeBodyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     changeBodyBtn.frame = CGRectMake(0, 164, 200, 44);
     [changeBodyBtn setTitle:@"更改文本" forState:UIControlStateNormal];
@@ -135,9 +138,17 @@
         self.bodyView.text = @"但奇怪的是，这个在家人眼中智力如此低下的居斯塔夫，却很早就显露了文学天赋。他还没有学会阅读便在头脑里构思故事，还没有学会写作就开始自编自演戏剧，他十三岁时编了一份手抄的小报，十四五岁已醉心于创作，可是直到三十六岁才开始发表作品。";
         self.bodyTextChanged = YES;
     }
-    
+
 }
 
 @end
+
+
+
+
+
+
+
+
 
 

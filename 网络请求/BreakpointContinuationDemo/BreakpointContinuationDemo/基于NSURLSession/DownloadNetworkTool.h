@@ -19,9 +19,7 @@
 
 @interface DownloadNetworkTool : NSObject
 
-@property (nonatomic, strong) NSURLSession* session;
-@property (nonatomic, strong) NSURLSessionDownloadTask* downloadTask;
-@property (nonatomic, strong) NSData* resumeData;
+@property (nonatomic, copy) NSString* fileName;
 @property (nonatomic, weak) id<DownLoadDelegate> myDeleate;
 @property (nonatomic, assign) NSInteger tag;// 某个文件下载的的标记
 

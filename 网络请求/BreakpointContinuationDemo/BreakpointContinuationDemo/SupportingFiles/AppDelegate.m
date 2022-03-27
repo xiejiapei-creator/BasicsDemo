@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    URLSessionDownloadViewController *rootVC = [[URLSessionDownloadViewController alloc] init];
+    DownLoadViewController *rootVC = [[DownLoadViewController alloc] init];
     UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
